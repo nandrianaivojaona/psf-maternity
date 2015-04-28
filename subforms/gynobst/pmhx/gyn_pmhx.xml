@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FreeMedForms>
+<FreeMedForms>
+
+  <formdescription>
+    <!-- Non translatable values -->
+    <authors>Eric Maeker, MD</authors>
+    <version>0.7.0</version>
+    <fmfv>0.7.0</fmfv>
+    <cdate>2011-04-17</cdate>
+    <icon>gyncecological.png</icon>
+    <weblink>http://www.cngof.asso.fr/D_TELE/dossier_gyneco.pdf</weblink>
+    <bibliography>http://www.cngof.asso.fr/D_TELE/dossier_gyneco.pdf</bibliography>
+
+    <!-- Translatable values -->
+    <license>GPLv3</license>
+    <description lang="fr">Dossier médical gynéco-obstétrique (CNGOF)</description>
+    <description lang="en">Gyneco-obstetrical patient file</description>
+    <category lang="en">Gynecological and obstetrical</category>
+    <category lang="fr">Gynéco-Obstétrique</category>
+    <tooltip lang="fr">French tooltip</tooltip>
+    <tooltip lang="xx">All other languages tooltip</tooltip>
+    <htmldescription lang="fr">date dernières règles, type de cycle, durée du cycle, dysménorrhée, dyspareunie, autres troubles, , , autres antécédents</htmldescription>
+    <htmldescription lang="xx"></htmldescription>
+    <specialties lang="fr"></specialties>
+    <specialties lang="xx"></specialties>
+
+  </formdescription>
+
+  <MedForm>
+    <name>GynPmhx::GeneralGyneco</name>
+    <label lang="xx">General Gynecology</label>
+    <label lang="fr">Gynécologie générale</label>
+    <type>form</type>
+    <options>unique</options>
+    <icon></icon>
+    <Item>
+      <type>date</type>
+      <name>GynPmhx::GeneralGyneco::FirstMenstrual</name>
+      <label lang="en">First menstrual period</label>
+      <label lang="fr">Date des premières règles</label>
+    </Item>
+    <Item>
+      <type>check</type>
+      <name>GynPmhx::GeneralGyneco::ContraceptivesUsage</name>
+      <label lang="en">Past medical history of contraception</label>
+      <label lang="fr">Antécédents de contraception</label>
+    </Item>
+    <Item>
+      <type>shorttext</type>
+      <name>GynPmhx::GeneralGyneco::ContraceptivesType</name>
+      <label lang="en">Type of contraception</label>
+      <label lang="fr">Type de contraception</label>
+    </Item>
+    <Item>
+      <type>date</type>
+      <name>GynPmhx::GeneralGyneco::MenopauseDate</name>
+      <label lang="en">Date of menopause</label>
+      <label lang="fr">Date de ménopause</label>
+    </Item>
+
+
+  </MedForm>
+
+</FreeMedForms>

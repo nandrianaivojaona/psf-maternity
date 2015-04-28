@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FreeMedForms>
+<FreeMedForms>
+
+  <formdescription>
+  <!-- Non translatable values -->
+  <authors>Eric Maeker, MD</authors>
+  <version>test</version>
+  <fmfv>0.6.0</fmfv>
+  <cdate>2011-12-21</cdate>
+  <lmdate>2011-12-21</lmdate>
+  <icon></icon>
+  <weblink></weblink>
+  <bibliography pmid=""></bibliography>
+
+  <!-- Translatable values -->
+  <license>GPLv3</license>
+  <description lang="fr">Maternity::PMHx::Personal::GynecoObstétric</description>
+  <description lang="xx">Maternity::PMHx::Personal::GynecoObstétric</description>
+  <category lang="xx">PMHx</category>
+  <category lang="fr">ATCD</category>
+  <specialties lang="fr">Consultation</specialties>
+  <specialties lang="xx">Consultation</specialties>
+  </formdescription>
+  <MedForm type="form" name="Maternity::PMHx::Perso::Gyneco::Obstetric">
+      <icon>__theme__/patienthistory.png</icon>
+      <label lang="xx">Gynecology PMHx</label>
+      <label lang="fr">ATCD Gyneco</label>
+	  <creationdate>27-08-2009</creationdate>
+	  <categorie>samples</categorie>
+	  <categorie lang="fr">samples</categorie>
+	  <specialties lang="fr">Consultation</specialties>
+	  <specialties lang="xx">Consultation</specialties>
+	  <authors lang="fr">Dr Eric Maeker</authors>
+	  <description lang="fr">Petite description ici</description>
+	  <bibliography lang="fr">Bibliographie ici</bibliography>
+	  <license lang="fr">Termes de la license</license> <options>NoEpisdode;UseFormNameAsNameSpace;DontPrintEmptyValues</options> 
+
+     <Item type="group" name="Gynecology">
+        <options>collapsible</options>
+        <label lang="xx">Gynecology PMHx</label>
+        <label lang="fr">Antécédents Gynécologiques :</label>
+        <Item type="shorttext" name="Menarche">
+           <label lang="xx">Menarche</label>
+           <label lang="fr">Ménarche</label>
+        </Item>
+        <Item type="group" name="Cycle">
+            <label lang="xx">Cycle</label>
+            <label lang="fr">Cycle</label>
+  	        <column>2</column>
+  	        <Item type="choice" name="Valuecycle">
+             <options>compact</options>
+             <value>
+              <possible id="0">Régulier</possible>
+              <possible id="1">Irrégulier</possible>
+              <uuid id="0">Regular</uuid>
+              <uuid id="1">Irrégulier</uuid> 
+  	         </value>
+          </Item>
+  	        <Item type="shorttext" name="Durationcycle">
+  	         <label lang="xx">Duration</label>
+  	        <label lang="fr">Durée</label>
+  		    <value>
+              <default></default>
+            </value>
+  	      </Item>  
+        </Item>
+        <Item type="combo" name="Contraception">
+            <column>1</column>  
+            <label lang="xx">Contraception</label>
+            <label lang="fr">Contraception</label>
+            <value>
+              <possible id="0">Aucune</possible>
+              <possible id="1">Pilulle</possible>
+              <possible id="2">Injectable</possible>
+              <possible id="3">DIU</possible>
+              <possible id="4">Implanon</possible>
+              <uuid id="0">Aucune</uuid>
+              <uuid id="1">Pilule</uuid> 
+              <uuid id="2">Injectable</uuid>
+              <uuid id="3">DIU</uuid>
+		      <uuid id="4">Implanon</uuid>
+  	        </value>
+        </Item>
+        <Item type="shorttext" name="Contraception::Text">
+  	     <label lang="xx">Contraception :</label>
+  	     <label lang="fr">Contraception :</label>
+        </Item>
+	 </Item>
+
+ </MedForm>
+   
+</FreeMedForms>
+
+

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FreeMedForms>
+<FreeMedForms>
+
+  <formdescription>
+  <!-- Non translatable values -->
+  <authors>Eric Maeker, MD</authors>
+  <version>test</version>
+  <fmfv>0.6.0</fmfv>
+  <cdate>2011-12-21</cdate>
+  <lmdate>2011-12-21</lmdate>
+  <icon></icon>
+  <weblink></weblink>
+  <bibliography pmid=""></bibliography>
+
+  <!-- Translatable values -->
+  <license>GPLv3</license>
+  <description lang="fr">Maternity::PMHx::Personal::GynecoObstétric</description>
+  <description lang="xx">Maternity::PMHx::Personal::GynecoObstétric</description>
+  <category lang="xx">PMHx</category>
+  <category lang="fr">ATCD</category>
+  <specialties lang="fr">Consultation</specialties>
+  <specialties lang="xx">Consultation</specialties>
+  </formdescription>
+
+ <Medform name="Maternity::PMHx::Personal::Gynecology">
+     <label lang="xx">Gyneco PMHx</label>
+     <label lang="fr">ATCD Gynécologique</label>
+	 <categorie lang="fr">Echantillon</categorie>
+	 <options>compact</options>
+	 <column>1</column>
+   <Item type="group" name="Maternity::PMHx::Personal::Gynecology">
+    <options>collapsible</options>
+    <label lang="xx">Gynecology PMHx</label>
+    <label lang="fr">Antécédents Gynécologique</label>
+    <Item type="shortext" name="Maternity::PMHx::Personal::Gynecology::menarche">
+      <label lang="xx">Menarche</label>
+      <label lang="fr">Ménarche</label>
+      <options>compact</options>
+    </Item>
+    <Item type="combo" name="Maternity::PMHx::Personal::Gynecology:: Contraception">
+       
+    <label lang="xx">Contraception</label>
+    <label lang="fr">Contraception</label>
+       <value>
+         <possible id="0">Aucune</possible>
+         <possible id="1">Pilulle</possible>
+         <possible id="2">Injectable</possible>
+         <possible id="3">DIU</possible>
+         <possible id="4">Implanon</possible>
+         <uuid id="0">Maternity::PMHx::Personal::Gynecology::Aucune</uuid>
+         <uuid id="1">Maternity::PMHx::Personal::Gynecology::pilule</uuid> 
+         <uuid id="2">Maternity::PMHx::Personal::Gynecology::injectable</uuid>
+         <uuid id="3">Maternity::PMHx::Personal::Gynecology::DIU</uuid>
+         <uuid id="4">Maternity::PMHx::Personal::Gynecology::implanon</uuid>
+	   </value>
+	  <Item type="shortext" name="Maternity::PMHx::Personal::Gynecology::Contraception::text">
+	     <label lang="xx">Contraception :</label>
+	     <label lang="fr">Contraception :</label>
+      </Item>
+    </Item>
+   </Item>
+ </Medform>
+   
+</FreeMedForms>
+
+

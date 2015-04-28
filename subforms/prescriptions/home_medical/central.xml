@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FreeMedForms>
+<FreeMedForms>
+
+  <formdescription>
+
+    <!-- Non translatable values -->
+    <authors>Eric Maeker, MD</authors>
+    <version>0.8.2</version>
+    <fmfv>0.8.0</fmfv>
+    <cdate>2013-04-14</cdate>
+    <lmdate>2013-04-14</lmdate>
+    <icon>elderly.png</icon>
+    <weblink>http://www.freemedforms.com</weblink>
+    <!-- Translatable values -->
+    <license>GPLv3</license>
+    <description lang="xx">Medical equipment prescription assistant</description>
+    <description lang="fr">Assistant à la prescription de matériel médical</description>
+    <category lang="xx">Prescription</category>
+    <category lang="fr">Prescription</category>
+
+    <updateinfo>
+      <updateversion from="" to="0.8.2">
+        <text lang="fr">
+        Première mise à disposition
+        </text>
+        <text lang="xx">
+        Initial release
+        </text>
+      </updateversion>
+    </updateinfo>
+
+  </formdescription>
+
+  <MedForm type="form" name="Subs::PrescrHelper::MedicalEquipment" uifilename="./ui/xx/medicalequipment.ui">
+    <label lang="xx">Medical equipment</label>
+    <label lang="fr">Matériel médical</label>
+    <icon>__theme__/elderly.png</icon>
+    <options>DontPrintEmptyValues;UseFormNameAsNameSpace</options>
+
+      <Item type="combo" name="BuyRent">
+        <uilink label="" widget="buyRent" layout=""/>
+        <label lang="xx">Create your prescription</label>
+        <label lang="fr">Créer votre prescription</label>
+        <options>DontPrintEmptyValues</options>
+      </Item>
+
+      <Item type="button" name="AddToEditor">
+        <uilink label="" widget="addButton" layout=""/>
+        <label lang="xx">Add to prescription</label>
+        <label lang="fr">Ajouter à la prescription</label>
+        <icon>__theme__/pixmap/16x16/add.png</icon>
+        <options>DontPrintEmptyValues;fulleditor</options>
+      </Item>
+
+      <Item type="texteditor" name="Prescription">
+        <uilink label="" widget="" layout="prescrLayout"/>
+        <options>DontPrintEmptyValues;fulleditor</options>
+      </Item>
+
+  </MedForm>
+</FreeMedForms>

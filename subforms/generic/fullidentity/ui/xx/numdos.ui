@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BaseWidgets::Internal::BaseFormWidget</class>
+ <widget class="QWidget" name="BaseWidgets::Internal::BaseFormWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>427</width>
+    <height>118</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string/>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="1">
+    <widget class="QLineEdit" name="numEdit"/>
+   </item>
+   <item row="0" column="3">
+    <widget class="QLabel" name="dosLabel">
+     <property name="text">
+      <string>dos</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="4">
+    <widget class="QLineEdit" name="dosEdit"/>
+   </item>
+   <item row="0" column="0">
+    <widget class="QLabel" name="numLabel">
+     <property name="text">
+      <string>Numero</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>numEdit</tabstop>
+  <tabstop>dosEdit</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

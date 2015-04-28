@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FreeMedForms>
+<FreeMedForms>
+
+  <formdescription>
+  <!-- Non translatable values -->
+  <authors>Eric Maeker, MD</authors>
+  <version>0.9.0</version>
+  <fmfv>0.6.0</fmfv>
+  <cdate>2011-12-21</cdate>
+  <lmdate>2011-12-21</lmdate>
+  <icon></icon>
+  <weblink></weblink>
+  <bibliography pmid=""></bibliography>
+
+  <!-- Translatable values -->
+  <license>GPLv3</license>
+  <description lang="fr">Antécédents gynécologiques</description>
+  <description lang="xx">Antécédents gynécologiques</description>
+  <category lang="xx">Antécédents</category>
+  <category lang="fr">Antécédents</category>
+  <specialties lang="fr">Antécédents</specialties>
+  <specialties lang="xx">Antécédents</specialties>
+
+  </formdescription>
+
+<MedForm>
+  <name>Antécédents_gynécologiquesFormSample</name>
+  <label>Antécédents gynécologiques</label>
+  <type>form</type>
+  <creationdate>27-08-2009</creationdate>
+  <categorie>samples</categorie>
+
+  <label lang="fr">Antécédents gynéco-obstétricaux</label>
+  <categorie lang="fr">samples</categorie>
+  <authors lang="fr">Dr Eric Maeker</authors>
+  <description lang="fr">Petite description ici</description>
+  <bibliography lang="fr">Bibliographie ici</bibliography>
+  <license lang="fr">Termes de la license</license>
+
+  <column>1</column>
+  <option>compact</option>
+
+  <Item>
+     <name>sampleDate_1</name>
+     <type>date</type>
+     <dateformat>dd MM yyyy</dateformat>
+     <label>Date</label>
+  </Item>
+   
+   <Item>
+     <name>sampleHelp_25</name>
+     <type>helptext</type>
+     <label>I-Antécédents personnels</label>
+   </Item>
+   <Item>
+     <name>sampleHelp_26</name>
+     <type>helptext</type>
+     <label>I-1-Antécédents gynéco-obstétricaux</label>
+   </Item>
+
+   <Item>
+     <name>sampleHelp_27</name>
+     <type>helptext</type>
+     <label>Antécédents gynécologiques</label>
+   </Item>
+
+   <Item>    
+    <name>sampleGroup_11</name>
+    <type>group</type>
+    <option>compact</option>  
+   <Item>
+      <name>sampleShort_36</name>
+      <label>Ménarche</label>
+      <type>shorttext</type>
+   </Item>
+
+   <Item>
+     <name>sampleHelp_28</name>
+     <type>helptext</type>
+     <label>Cycle</label>
+    </Item>
+    <Item>
+     <name>sampleCombo_21</name>
+     <type>combo</type>
+     <label>Cycle</label>
+     <value>
+       <possible id="0">régulier</possible>
+       <possible id="1">irrégulier</possible>
+       <uuid id="0">régulier</uuid>
+       <uuid id="1">irrégulier</uuid>       
+     </value>
+    </Item>
+
+    <Item>
+      <name>sampleShort_37</name>
+      <label>Durée</label>
+      <type>shorttext</type>
+    </Item>
+
+    <Item>
+     <name>sampleHelp_29</name>
+     <type>helptext</type>
+     <label>Contraception</label>
+    </Item>
+    <Item>
+     <name>sampleCombo_22</name>
+     <type>combo</type>
+     <label>Contraception</label>
+     <value>
+       <possible id="0">aucune</possible>
+       <possible id="1">pilule</possible>
+       <possible id="2">injectable</possible>
+       <possible id="3">DIU</possible>
+       <possible id="4">irrégulier</possible>    
+
+       <uuid id="0">aucune</uuid>
+       <uuid id="1">pilule</uuid>
+       <uuid id="2">injectable</uuid> 
+       <uuid id="3">DIU</uuid> 
+       <uuid id="4">implanon</uuid>       
+     </value>
+    </Item>
+    <Item>
+      <name>sampleShort_38</name>
+      <label>Saisie Texte</label>
+      <type>shorttext</type>
+    </Item>
+    <Item>
+      <name>sampleShort_39</name>
+      <label>Délai PF-Grossesse</label>
+      <type>shorttext</type>
+    </Item>
+    <Item>
+      <name>sampleShort_40</name>
+      <label>Nombre de gestité</label>
+      <type>shorttext</type>
+    </Item>
+    <Item>
+      <name>sampleShort_41</name>
+      <label>Nombre d'efants vivants</label>
+      <type>shorttext</type>
+    </Item>  
+  
+  </Item>
+
+  
+  <Item>
+    <name>sampleGroup_12</name>
+    <type>group</type>
+    <option>compact</option>
+  
+    <Item>
+      <name>sampleShort_42</name>
+      <label>Nombre de parité</label>
+      <type>shorttext</type>
+    </Item>
+    <Item>
+      <name>sampleShort_43</name>
+      <label>Année</label>
+      <type>shorttext</type>
+    </Item>
+    <Item>
+      <name>sampleShort_44</name>
+      <label>Lieu d'accouchement</label>
+      <type>shorttext</type>
+    </Item>
+    <Item type="measurement" name="weight_1">
+      <label lang="xx">weight</label>
+      <label lang="fr">Poids</label>
+      <options>DontPrintEmptyValues;Weight</options>
+      <default>Kilogramme(s)</default>
+    </Item>
+    <Item>
+     <name>sampleHelp_30</name>
+     <type>helptext</type>
+     <label>Sexe</label>
+    </Item>
+    <Item>
+     <name>sampleCombo_23</name>
+     <type>combo</type>
+     <label>Sexe</label>
+     <value>
+       <possible id="0">M</possible>
+       <possible id="1">F</possible>         
+       <uuid id="0">M</uuid>
+       <uuid id="1">F</uuid>
+     </value>
+    </Item>
+    <Item>
+      <name>sampleShort_45</name>
+      <label>Semaine d’aménorrhée</label>
+      <type>shorttext</type>
+    </Item>
+    <Item>
+     <name>sampleHelp_31</name>
+     <type>helptext</type>
+     <label>Mode d'accouchement</label>
+    </Item>
+    <Item>
+     <name>sampleCombo_24</name>
+     <type>combo</type>
+     <label>Mode d'accouchement</label>
+     <value>
+       <possible id="0">AVB</possible>
+       <possible id="1">AVB avec instruments</possible>
+       <possible id="2">OCU</possible> 
+       <possible id="3">OCP</possible>          
+       <uuid id="0">AVB</uuid>
+       <uuid id="1">AVB avec instruments</uuid>
+       <uuid id="2">OCU</uuid>
+       <uuid id="3">OCP</uuid>
+     </value>
+    </Item>
+    <Item>
+      <name>sampleShort_46</name>
+      <label>Motif de césarienne</label>
+      <type>shorttext</type>
+    </Item>
+    <Item>
+     <name>sampleHelp_32</name>
+     <type>helptext</type>
+     <label>Pathologie</label>
+    </Item>
+    <Item>
+     <name>sampleCombo_25</name>
+     <type>combo</type>
+     <label>Pathologie</label>
+     <value>
+       <possible id="0">MFCS</possible>
+       <possible id="1">MAP</possible>
+       <possible id="2">HTA</possible> 
+       <possible id="3">DIABETE</possible> 
+       <possible id="3">RCIU</possible> 
+       <possible id="3">MIU</possible>          
+       <uuid id="0">MFCS</uuid>
+       <uuid id="1">MAP</uuid>
+       <uuid id="2">HTA</uuid>
+       <uuid id="3">DIABETE</uuid>
+       <uuid id="3">RCIU</uuid>
+       <uuid id="3">MIU</uuid>
+     </value>
+    </Item>
+    <Item>
+      <name>sampleShort_47</name>
+      <label>Saisie texte</label>
+      <type>shorttext</type>
+    </Item>
+    <Item>
+      <name>sampleShort_48</name>
+      <label>Malformation</label>
+      <type>shorttext</type>
+    </Item>
+    <Item>
+     <name>sampleHelp_33</name>
+     <type>helptext</type>
+     <label>Mortalité périnatale</label>
+    </Item>
+    <Item>
+     <name>sampleCombo_26</name>
+     <type>combo</type>
+     <label>Mortalité périnatale</label>
+     <value>
+       <possible id="0">oui</possible>
+       <possible id="1">non</possible>                
+       <uuid id="0">oui</uuid>
+       <uuid id="1">non</uuid>       
+     </value>
+    </Item>
+    <Item>
+      <name>sampleShort_49</name>
+      <label>Diagnostic</label>
+      <type>shorttext</type>
+    </Item>  
+  </Item>
+
+  <Item>
+     <name>sampleHelp_34</name>
+     <type>helptext</type>
+     <label>Grossesses interrompues</label>
+  </Item>
+  <Item>
+    <name>sampleGroup_12</name>
+    <type>group</type>
+    <option>compact</option>
+    <Item>
+      <name>sampleShort_50</name>
+      <label>Année</label>
+      <type>shorttext</type>
+    </Item> 
+    <Item>
+      <name>sampleShort_50</name>
+      <label>SA</label>
+      <type>shorttext</type>
+    </Item> 
+
+
+    <Item>
+     <name>sampleHelp_35</name>
+     <type>helptext</type>
+     <label>Type</label>
+    </Item>
+    <Item>
+     <name>sampleCombo_27</name>
+     <type>combo</type>
+     <label>Type</label>
+     <value>
+       <possible id="0">FCS</possible>
+       <possible id="1">ITG</possible> 
+       <possible id="1">MOLE</possible>
+       <possible id="1">œuf clair</possible>
+       <possible id="1">IVG</possible>
+       <possible id="1">GEU</possible>               
+       <uuid id="0">FCS</uuid>
+       <uuid id="1">ITG</uuid>
+       <uuid id="1">MOLE</uuid> 
+       <uuid id="1">œuf_clair</uuid> 
+       <uuid id="1">IVG</uuid> 
+       <uuid id="1">GEU</uuid>        
+     </value>
+    </Item>
+    <Item>
+     <name>sampleHelp_36</name>
+     <type>helptext</type>
+     <label>Actes</label>
+    </Item>
+    <Item>
+     <name>sampleCombo_28</name>
+     <type>combo</type>
+     <label>Actes</label>
+     <value>
+       <possible id="0">EIU</possible>
+       <possible id="1">médicamenteux</possible>
+       <uuid id="0">EIU</uuid>
+       <uuid id="1">médicamenteux</uuid>              
+     </value>
+    </Item> 
+  
+  </Item>
+
+  <Item>
+    <name>sampleGroup_12</name>
+    <type>group</type>
+    <option>compact</option>
+  
+    <Item>
+     <name>sampleHelp_37</name>
+     <type>helptext</type>
+     <label>Frottis de dépistage</label>
+    </Item>
+    <Item>
+     <name>sampleCombo_29</name>
+     <type>combo</type>
+     <label>Frottis de dépistage</label>
+     <value>
+       <possible id="0">oui</possible>
+       <possible id="1">non</possible>
+       <uuid id="0">oui</uuid>
+       <uuid id="1">non</uuid>              
+     </value>
+    </Item>
+     <Item>
+      <name>sampleShort_51</name>
+      <label>Année du dernier frottis</label>
+      <type>shorttext</type>
+    </Item> 
+    <Item>
+      <name>sampleShort_52</name>
+      <label>Résultats</label>
+      <type>shorttext</type>
+    </Item> 
+  
+  </Item>
+
+    <Item>
+     <name>sampleHelp_39</name>
+     <type>helptext</type>
+     <label>Antécédents médicaux</label>
+    </Item>
+    <Item>
+    <name>sampleGroup_13</name>
+    <type>group</type>
+    <option>compact</option>
+    
+    <Item>
+     <name>sampleHelp_40</name>
+     <type>helptext</type>
+     <label>Maladies pulmonaires</label>
+    </Item>
+    <Item>
+     <name>sampleCombo_30</name>
+     <type>combo</type>
+     <label>Maladies pulmonaires</label>
+     <value>
+       <possible id="0">asthme</possible>
+       <possible id="1">bronchite</possible>
+       <possible id="2">tuberculose</possible>
+       <uuid id="0">asthme</uuid>
+       <uuid id="1">bronchite</uuid>
+       <uuid id="2">tuberculose</uuid>                
+     </value>
+    </Item>
+    <Item>
+      <name>sampleShort_53</name>
+      <label>Commentaires</label>
+      <type>shorttext</type>
+    </Item>
+
+    <Item>
+     <name>sampleHelp_41</name>
+     <type>helptext</type>
+     <label>Maladies cardiocirculatoires</label>
+    </Item>
+    <Item>
+     <name>sampleCombo_31</name>
+     <type>combo</type>
+     <label>Maladies cardiocirculatoires</label>
+     <value>
+       <possible id="0">HTA</possible>
+       <possible id="1">varice</possible>
+       <possible id="2">insuffisance cardiaque</possible>
+       <possible id="2">hémorroides</possible>
+       <possible id="2">insuffisance coronarienne</possible>
+       <possible id="2">phlébite</possible>
+       <possible id="2"> infarctus de myocarde</possible>
+       
+       <uuid id="0">HTA</uuid>
+       <uuid id="1">varice</uuid>
+       <uuid id="2">insuffisance_cardiaque</uuid> 
+       <uuid id="2">hémorroides</uuid>
+       <uuid id="2">insuffisance_coronarienne</uuid>
+       <uuid id="2">phlébite</uuid>
+       <uuid id="2"> infarctus_myocarde</uuid>
+                     
+     </value>
+    </Item>
+    <Item>
+      <name>sampleShort_54</name>
+      <label>Commentaires</label>
+      <type>shorttext</type>
+    </Item>
+
+    <Item>
+     <name>sampleHelp_42</name>
+     <type>helptext</type>
+     <label>Maladies hépathiques</label>
+    </Item>
+    <Item>
+     <name>sampleCombo_32</name>
+     <type>combo</type>
+     <label>Maladies hépathiques</label>
+     <value>
+       <possible id="0">hépatite</possible>
+       <possible id="1">cirrhose</possible>
+       <possible id="2">trouble de la coagulation</possible>
+       <uuid id="0">hépatite</uuid>
+       <uuid id="1">cirrhose</uuid>
+       <uuid id="2">trouble_coagulation</uuid>                
+     </value>
+    </Item>
+    <Item>
+      <name>sampleShort_55</name>
+      <label>Commentaires</label>
+      <type>shorttext</type>
+    </Item>
+
+    <Item>
+     <name>sampleHelp_43</name>
+     <type>helptext</type>
+     <label>Maladies endocriniennes</label>
+    </Item>
+    <Item>
+     <name>sampleCombo_33</name>
+     <type>combo</type>
+     <label>Maladies endocriniennes</label>
+     <value>
+       <possible id="0">diabète</possible>
+       <possible id="1">insuffisance surénalienne</possible>
+       <possible id="2">hypothyroïdie</possible>
+       <uuid id="0">diabète</uuid>
+       <uuid id="1"> insuffisance_surénalienne</uuid>
+       <uuid id="2">hypothyroïdie</uuid>                
+     </value>
+    </Item>
+    <Item>
+      <name>sampleShort_56</name>
+      <label>Commentaires</label>
+      <type>shorttext</type>
+    </Item>
+
+    <Item>
+     <name>sampleHelp_44</name>
+     <type>helptext</type>
+     <label>Autres</label>
+    </Item>
+    <Item>
+     <name>sampleCombo_34</name>
+     <type>combo</type>
+     <label>Autres</label>
+     <value>
+       <possible id="0">herpès</possible>
+       <possible id="1">Infection cervico-vaginale</possible>
+       <uuid id="0">herpès</uuid>
+       <uuid id="1">Infection_cervico_vaginale</uuid>
+                      
+     </value>
+    </Item>
+    <Item>
+      <name>sampleShort_57</name>
+      <label>Commentaires</label>
+      <type>shorttext</type>
+    </Item>
+  
+    </Item>
+
+
+    <Item>
+     <name>sampleHelp_45</name>
+     <type>helptext</type>
+     <label>Allergies</label>
+    </Item>
+
+    <Item>
+    <name>sampleGroup_14</name>
+    <type>group</type>
+    <option>compact</option>
+  
+    <Item>
+      <name>sampleShort_58</name>
+      <label>alimentaires</label>
+      <type>shorttext</type>
+    </Item>
+    <Item>
+      <name>sampleShort_59</name>
+      <label>médicamenteuses</label>
+      <type>shorttext</type>
+    </Item>
+    <Item>
+      <name>sampleShort_60</name>
+      <label>de contact</label>
+      <type>shorttext</type>
+    </Item>
+  
+    </Item>
+
+    <Item>
+     <name>sampleHelp_46</name>
+     <type>helptext</type>
+     <label>Antécédents chirurgicaux</label>
+    </Item>
+    <Item>
+    <name>sampleGroup_15</name>
+    <type>group</type>
+    <option>compact</option>
+  
+    <Item>
+      <name>sampleShort_61</name>
+      <label>Année</label>
+      <type>shorttext</type>
+    </Item>
+    <Item>
+      <name>sampleShort_62</name>
+      <label>Type d'intervention</label>
+      <type>shorttext</type>
+    </Item>
+    <Item>
+     <name>sampleHelp_47</name>
+     <type>helptext</type>
+     <label>Anesthésie</label>
+    </Item>
+    <Item>
+     <name>sampleCombo_35</name>
+     <type>combo</type>
+     <label>Anesthésie</label>
+     <value>
+       <possible id="0">local</possible>
+       <possible id="1">général</possible>
+       <possible id="2">locorégional</possible>
+       <uuid id="0">local</uuid>
+       <uuid id="1">général</uuid>
+       <possible id="2">locorégional</possible>
+                      
+     </value>
+    </Item>   
+  
+    </Item>
+
+    <Item>
+     <name>sampleHelp_50</name>
+     <type>helptext</type>
+     <label>Antécédants de transfusion</label>
+    </Item>
+    <Item>
+     <name>sampleCombo_36</name>
+     <type>combo</type>
+     <label>Antécédants de transfusion</label>
+     <value>
+       <possible id="0">oui</possible>
+       <possible id="1">non</possible>
+       
+       <uuid id="0">oui</uuid>
+       <uuid id="1">non</uuid>
+                           
+     </value>
+    </Item>
+    <Item>
+       <name>date_2</name>
+       <type>date</type>
+       <label>Date</label>
+     </Item>
+     <Item>
+      <name>sampleShort_63</name>
+      <label>Motif</label>
+      <type>shorttext</type>
+    </Item>
+   
+</MedForm>
+
+</FreeMedForms>

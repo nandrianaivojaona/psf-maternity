@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FreeMedForms>
+<FreeMedForms>
+
+  <formdescription>
+  <!-- Non translatable values -->
+  <authors>Eric Maeker, MD</authors>
+  <version>test</version>
+  <fmfv>0.6.0</fmfv>
+  <cdate>2011-12-21</cdate>
+  <lmdate>2011-12-21</lmdate>
+  <icon></icon>
+  <weblink></weblink>
+  <bibliography pmid=""></bibliography>
+
+  <!-- Translatable values -->
+  <license>GPLv3</license>
+  <description lang="fr">ATCD Familial</description>
+  <description lang="xx">Family PMH</description>
+  <category lang="xx">PMHx</category>
+  <category lang="fr">ATCD</category>
+  <specialties lang="fr">Consultation ATCD</specialties>
+  <specialties lang="xx">PMH consultation</specialties>
+
+  </formdescription>
+  <MedForm type="form" name="Maternity::PMHx::Family">
+    <label lang="fr">Antécédents Familiaux</label>
+    <creationdate>27-08-2009</creationdate>
+    <categorie>PMHx</categorie>
+    <categorie lang="fr">samples PMHx</categorie>
+    <authors lang="fr">Dr Eric Maeker</authors>
+    <description lang="fr">Antécédents Familiaux</description>
+    <bibliography lang="fr"></bibliography>
+    <license lang="fr">Termes de la license</license>
+    <options>UseFormNameAsNameSpace</options>
+    
+    <options>compact</options>
+  
+
+  <Item type="group" name="">
+       <label lang="xx">Family PMHx</label>
+	   <label lang="fr">ATCD Familiaux</label>
+	   <column>1</column>
+       <Item type="group" name="HTA">
+		      <options>collapsible</options>
+		      <label lang="fr">HTA :</label>
+			  <label lang="xx">Blood pressure :</label>
+			  <Item type="multilist" name="Choice">
+				  <label lang="fr">Familles choisies </label>
+				  <label lang="fr">Family choosen </label>
+			          <value>
+			            <possible id="0">Mère</possible>
+			            <possible id="1">Père</possible>
+			            <possible id="2">Soeur</possible>
+			            <possible id="3">Frère</possible>
+						<possible id="4">Grande-mère maternelle</possible>
+						<possible id="5">Grande-mère paternelle</possible>
+						<possible id="6">Grand-père maternelle</possible>
+						<possible id="7">Grand-père paternelle</possible>
+			            <possible id="8">Tante maternelle</possible>
+						<possible id="9">Tante paternelle</possible>
+						<possible id="10">Oncle maternelle</possible>
+						<possible id="11">Oncle paternelle</possible>
+						<possible id="12">Cousine</possible>
+						<possible id="13">Cousin</possible>
+						
+			            <uuid id="0">Mère</uuid>
+			            <uuid id="1">Père</uuid>
+			            <uuid id="2">Soeur</uuid>
+			            <uuid id="3">Frère</uuid>
+						<uuid id="4">Grande-mère maternelle</uuid>
+						<uuid id="5">Grande-mère paternelle</uuid>
+						<uuid id="6">Grand-père maternelle</uuid>
+						<uuid id="7">Grand-père paternelle</uuid>
+			            <uuid id="8">Tante maternelle</uuid>
+						<uuid id="9">Tante paternelle</uuid>
+						<uuid id="10">Oncle maternelle</uuid>
+						<uuid id="11">Oncle paternelle</uuid>
+						<uuid id="12">Cousine</uuid>
+						<uuid id="13">Cousin</uuid>
+			          </value>
+			  </Item>
+			  <Item type="shorttext" name="Comment">
+				  <label lang="fr">Commentaires éventuels</label>
+				  <label lang="xx">Comments in case of</label>
+			  </Item>
+	   </Item>
+       <Item type="group" name="Diabetes">
+		      <options>collapsible</options>
+		      <label lang="fr">Diabète :</label>
+			  <label lang="xx">Diabetes :</label>
+			  <Item type="multilist" name="Choice">
+				  <label lang="fr">Familles choisies </label>
+				  <label lang="fr">Family choosen </label>
+			          <value>
+			            <possible id="0">Mère</possible>
+			            <possible id="1">Père</possible>
+			            <possible id="2">Soeur</possible>
+			            <possible id="3">Frère</possible>
+						<possible id="4">Grande-mère maternelle</possible>
+						<possible id="5">Grande-mère paternelle</possible>
+						<possible id="6">Grand-père maternelle</possible>
+						<possible id="7">Grand-père paternelle</possible>
+			            <possible id="8">Tante maternelle</possible>
+						<possible id="9">Tante paternelle</possible>
+						<possible id="10">Oncle maternelle</possible>
+						<possible id="11">Oncle paternelle</possible>
+						<possible id="12">Cousine</possible>
+						<possible id="13">Cousin</possible>
+						
+			            <uuid id="0">Mère</uuid>
+			            <uuid id="1">Père</uuid>
+			            <uuid id="2">Soeur</uuid>
+			            <uuid id="3">Frère</uuid>
+						<uuid id="4">Grande-mère maternelle</uuid>
+						<uuid id="5">Grande-mère paternelle</uuid>
+						<uuid id="6">Grand-père maternelle</uuid>
+						<uuid id="7">Grand-père paternelle</uuid>
+			            <uuid id="8">Tante maternelle</uuid>
+						<uuid id="9">Tante paternelle</uuid>
+						<uuid id="10">Oncle maternelle</uuid>
+						<uuid id="11">Oncle paternelle</uuid>
+						<uuid id="12">Cousine</uuid>
+						<uuid id="13">Cousin</uuid>
+			          </value>
+			  </Item>
+			  <Item type="shorttext" name="Comment">
+				  <label lang="fr">Commentaires éventuels</label>
+				  <label lang="xx">Comments in case of</label>
+			  </Item>
+	   </Item>
+       <Item type="group" name="Asthma">
+		      <options>collapsible</options>
+		      <label lang="fr">Asthme :</label>
+			  <label lang="xx">Asthma :</label>
+			  <Item type="multilist" name="Choice">
+				  <label lang="fr">Familles choisies </label>
+				  <label lang="fr">Family choosen </label>
+			          <value>
+			            <possible id="0">Mère</possible>
+			            <possible id="1">Père</possible>
+			            <possible id="2">Soeur</possible>
+			            <possible id="3">Frère</possible>
+						<possible id="4">Grande-mère maternelle</possible>
+						<possible id="5">Grande-mère paternelle</possible>
+						<possible id="6">Grand-père maternelle</possible>
+						<possible id="7">Grand-père paternelle</possible>
+			            <possible id="8">Tante maternelle</possible>
+						<possible id="9">Tante paternelle</possible>
+						<possible id="10">Oncle maternelle</possible>
+						<possible id="11">Oncle paternelle</possible>
+						<possible id="12">Cousine</possible>
+						<possible id="13">Cousin</possible>
+						
+			            <uuid id="0">Mère</uuid>
+			            <uuid id="1">Père</uuid>
+			            <uuid id="2">Soeur</uuid>
+			            <uuid id="3">Frère</uuid>
+						<uuid id="4">Grande-mère maternelle</uuid>
+						<uuid id="5">Grande-mère paternelle</uuid>
+						<uuid id="6">Grand-père maternelle</uuid>
+						<uuid id="7">Grand-père paternelle</uuid>
+			            <uuid id="8">Tante maternelle</uuid>
+						<uuid id="9">Tante paternelle</uuid>
+						<uuid id="10">Oncle maternelle</uuid>
+						<uuid id="11">Oncle paternelle</uuid>
+						<uuid id="12">Cousine</uuid>
+						<uuid id="13">Cousin</uuid>
+			          </value>
+			  </Item>
+			  <Item type="shorttext" name="Comment">
+				  <label lang="fr">Commentaires éventuels</label>
+				  <label lang="xx">Comments in case of</label>
+			  </Item>
+	   </Item>
+       <Item type="group" name="Malformation">
+		      <options>collapsible</options>
+		      <label lang="fr">Malformation :</label>
+			  <label lang="xx">Malformation:</label>
+			  <Item type="multilist" name="Choice">
+				  <label lang="fr">Familles choisies </label>
+				  <label lang="fr">Family choosen </label>
+			          <value>
+			            <possible id="0">Mère</possible>
+			            <possible id="1">Père</possible>
+			            <possible id="2">Soeur</possible>
+			            <possible id="3">Frère</possible>
+						<possible id="4">Grande-mère maternelle</possible>
+						<possible id="5">Grande-mère paternelle</possible>
+						<possible id="6">Grand-père maternelle</possible>
+						<possible id="7">Grand-père paternelle</possible>
+			            <possible id="8">Tante maternelle</possible>
+						<possible id="9">Tante paternelle</possible>
+						<possible id="10">Oncle maternelle</possible>
+						<possible id="11">Oncle paternelle</possible>
+						<possible id="12">Cousine</possible>
+						<possible id="13">Cousin</possible>
+						
+			            <uuid id="0">Mère</uuid>
+			            <uuid id="1">Père</uuid>
+			            <uuid id="2">Soeur</uuid>
+			            <uuid id="3">Frère</uuid>
+						<uuid id="4">Grande-mère maternelle</uuid>
+						<uuid id="5">Grande-mère paternelle</uuid>
+						<uuid id="6">Grand-père maternelle</uuid>
+						<uuid id="7">Grand-père paternelle</uuid>
+			            <uuid id="8">Tante maternelle</uuid>
+						<uuid id="9">Tante paternelle</uuid>
+						<uuid id="10">Oncle maternelle</uuid>
+						<uuid id="11">Oncle paternelle</uuid>
+						<uuid id="12">Cousine</uuid>
+						<uuid id="13">Cousin</uuid>
+			          </value>
+			  </Item>
+			  <Item type="shorttext" name="Comment">
+				  <label lang="fr">Commentaires éventuels</label>
+				  <label lang="xx">Comments in case of</label>
+			  </Item>
+	   </Item>
+       <Item type="group" name="Hereditiary::Diseases">
+		      <options>collapsible</options>
+		      <label lang="fr">Maladies héréditaires</label>
+			  <label lang="xx">Heriditiary diseases</label>
+			  <Item type="multilist" name="Choice">
+				  <label lang="fr">Familles choisies </label>
+				  <label lang="fr">Family choosen </label>
+			          <value>
+			            <possible id="0">Mère</possible>
+			            <possible id="1">Père</possible>
+			            <possible id="2">Soeur</possible>
+			            <possible id="3">Frère</possible>
+						<possible id="4">Grande-mère maternelle</possible>
+						<possible id="5">Grande-mère paternelle</possible>
+						<possible id="6">Grand-père maternelle</possible>
+						<possible id="7">Grand-père paternelle</possible>
+			            <possible id="8">Tante maternelle</possible>
+						<possible id="9">Tante paternelle</possible>
+						<possible id="10">Oncle maternelle</possible>
+						<possible id="11">Oncle paternelle</possible>
+						<possible id="12">Cousine</possible>
+						<possible id="13">Cousin</possible>
+						
+			            <uuid id="0">Mère</uuid>
+			            <uuid id="1">Père</uuid>
+			            <uuid id="2">Soeur</uuid>
+			            <uuid id="3">Frère</uuid>
+						<uuid id="4">Grande-mère maternelle</uuid>
+						<uuid id="5">Grande-mère paternelle</uuid>
+						<uuid id="6">Grand-père maternelle</uuid>
+						<uuid id="7">Grand-père paternelle</uuid>
+			            <uuid id="8">Tante maternelle</uuid>
+						<uuid id="9">Tante paternelle</uuid>
+						<uuid id="10">Oncle maternelle</uuid>
+						<uuid id="11">Oncle paternelle</uuid>
+						<uuid id="12">Cousine</uuid>
+						<uuid id="13">Cousin</uuid>
+			          </value>
+			  </Item>
+			  <Item type="shorttext" name="Comment">
+				  <label lang="fr">Commentaires éventuels</label>
+				  <label lang="xx">Comments in case of</label>
+			  </Item>
+	   </Item>
+       <Item type="group" name="Breast::Cancer">
+		      <options>collapsible</options>
+		      <label lang="fr">Cancer du sein :</label>
+			  <label lang="xx">Breast cancer :</label>
+			  <Item type="multilist" name="Choice">
+				  <label lang="fr">Familles choisies </label>
+				  <label lang="fr">Family choosen </label>
+			          <value>
+			            <possible id="0">Mère</possible>
+			            <possible id="1">Père</possible>
+			            <possible id="2">Soeur</possible>
+			            <possible id="3">Frère</possible>
+						<possible id="4">Grande-mère maternelle</possible>
+						<possible id="5">Grande-mère paternelle</possible>
+						<possible id="6">Grand-père maternelle</possible>
+						<possible id="7">Grand-père paternelle</possible>
+			            <possible id="8">Tante maternelle</possible>
+						<possible id="9">Tante paternelle</possible>
+						<possible id="10">Oncle maternelle</possible>
+						<possible id="11">Oncle paternelle</possible>
+						<possible id="12">Cousine</possible>
+						<possible id="13">Cousin</possible>
+						
+			            <uuid id="0">Mère</uuid>
+			            <uuid id="1">Père</uuid>
+			            <uuid id="2">Soeur</uuid>
+			            <uuid id="3">Frère</uuid>
+						<uuid id="4">Grande-mère maternelle</uuid>
+						<uuid id="5">Grande-mère paternelle</uuid>
+						<uuid id="6">Grand-père maternelle</uuid>
+						<uuid id="7">Grand-père paternelle</uuid>
+			            <uuid id="8">Tante maternelle</uuid>
+						<uuid id="9">Tante paternelle</uuid>
+						<uuid id="10">Oncle maternelle</uuid>
+						<uuid id="11">Oncle paternelle</uuid>
+						<uuid id="12">Cousine</uuid>
+						<uuid id="13">Cousin</uuid>
+			          </value>
+			  </Item>
+			  <Item type="shorttext" name="Comment">
+				  <label lang="fr">Commentaires éventuels</label>
+				  <label lang="xx">Comments in case of</label>
+			  </Item>
+	   </Item>
+       <Item type="group" name="Uterus::Cancer">
+		      <options>collapsible</options>
+		      <label lang="fr">Cancer de l'utérus :</label>
+			  <label lang="xx">Utérus cancer :</label>
+			  <Item type="multilist" name="Choice">
+				  <label lang="fr">Familles choisies </label>
+				  <label lang="fr">Family choosen </label>
+			          <value>
+			            <possible id="0">Mère</possible>
+			            <possible id="1">Père</possible>
+			            <possible id="2">Soeur</possible>
+			            <possible id="3">Frère</possible>
+						<possible id="4">Grande-mère maternelle</possible>
+						<possible id="5">Grande-mère paternelle</possible>
+						<possible id="6">Grand-père maternelle</possible>
+						<possible id="7">Grand-père paternelle</possible>
+			            <possible id="8">Tante maternelle</possible>
+						<possible id="9">Tante paternelle</possible>
+						<possible id="10">Oncle maternelle</possible>
+						<possible id="11">Oncle paternelle</possible>
+						<possible id="12">Cousine</possible>
+						<possible id="13">Cousin</possible>
+						
+			            <uuid id="0">Mère</uuid>
+			            <uuid id="1">Père</uuid>
+			            <uuid id="2">Soeur</uuid>
+			            <uuid id="3">Frère</uuid>
+						<uuid id="4">Grande-mère maternelle</uuid>
+						<uuid id="5">Grande-mère paternelle</uuid>
+						<uuid id="6">Grand-père maternelle</uuid>
+						<uuid id="7">Grand-père paternelle</uuid>
+			            <uuid id="8">Tante maternelle</uuid>
+						<uuid id="9">Tante paternelle</uuid>
+						<uuid id="10">Oncle maternelle</uuid>
+						<uuid id="11">Oncle paternelle</uuid>
+						<uuid id="12">Cousine</uuid>
+						<uuid id="13">Cousin</uuid>
+			          </value>
+			  </Item>
+			  <Item type="shorttext" name="Comment">
+				  <label lang="fr">Commentaires éventuels</label>
+				  <label lang="xx">Comments in case of</label>
+			  </Item>
+	   </Item>
+       <Item type="group" name="Others::Cancer">
+		      <options>collapsible</options>
+		      <label lang="fr">Autres cancers :</label>
+			  <label lang="xx">Other cancer :</label>
+			  <Item type="multilist" name="Choice">
+				  <label lang="fr">Familles choisies </label>
+				  <label lang="fr">Family choosen </label>
+			          <value>
+			            <possible id="0">Mère</possible>
+			            <possible id="1">Père</possible>
+			            <possible id="2">Soeur</possible>
+			            <possible id="3">Frère</possible>
+						<possible id="4">Grande-mère maternelle</possible>
+						<possible id="5">Grande-mère paternelle</possible>
+						<possible id="6">Grand-père maternelle</possible>
+						<possible id="7">Grand-père paternelle</possible>
+			            <possible id="8">Tante maternelle</possible>
+						<possible id="9">Tante paternelle</possible>
+						<possible id="10">Oncle maternelle</possible>
+						<possible id="11">Oncle paternelle</possible>
+						<possible id="12">Cousine</possible>
+						<possible id="13">Cousin</possible>
+						
+			            <uuid id="0">Mère</uuid>
+			            <uuid id="1">Père</uuid>
+			            <uuid id="2">Soeur</uuid>
+			            <uuid id="3">Frère</uuid>
+						<uuid id="4">Grande-mère maternelle</uuid>
+						<uuid id="5">Grande-mère paternelle</uuid>
+						<uuid id="6">Grand-père maternelle</uuid>
+						<uuid id="7">Grand-père paternelle</uuid>
+			            <uuid id="8">Tante maternelle</uuid>
+						<uuid id="9">Tante paternelle</uuid>
+						<uuid id="10">Oncle maternelle</uuid>
+						<uuid id="11">Oncle paternelle</uuid>
+						<uuid id="12">Cousine</uuid>
+						<uuid id="13">Cousin</uuid>
+			          </value>
+			  </Item>
+			  <Item type="shorttext" name="Comment">
+				  <label lang="fr">Commentaires éventuels</label>
+				  <label lang="xx">Comments in case of</label>
+			  </Item>
+	   </Item>
+       <Item type="group" name="Others::Pmhx">
+		      <options>collapsible</options>
+		      <label lang="fr">Autres antécédents :</label>
+			  <label lang="xx">Other PMHx :</label>
+			  <Item type="multilist" name="Choice">
+				  <label lang="fr">Familles choisies </label>
+				  <label lang="fr">Family choosen </label>
+			          <value>
+			            <possible id="0">Mère</possible>
+			            <possible id="1">Père</possible>
+			            <possible id="2">Soeur</possible>
+			            <possible id="3">Frère</possible>
+						<possible id="4">Grande-mère maternelle</possible>
+						<possible id="5">Grande-mère paternelle</possible>
+						<possible id="6">Grand-père maternelle</possible>
+						<possible id="7">Grand-père paternelle</possible>
+			            <possible id="8">Tante maternelle</possible>
+						<possible id="9">Tante paternelle</possible>
+						<possible id="10">Oncle maternelle</possible>
+						<possible id="11">Oncle paternelle</possible>
+						<possible id="12">Cousine</possible>
+						<possible id="13">Cousin</possible>
+						
+			            <uuid id="0">Mère</uuid>
+			            <uuid id="1">Père</uuid>
+			            <uuid id="2">Soeur</uuid>
+			            <uuid id="3">Frère</uuid>
+						<uuid id="4">Grande-mère maternelle</uuid>
+						<uuid id="5">Grande-mère paternelle</uuid>
+						<uuid id="6">Grand-père maternelle</uuid>
+						<uuid id="7">Grand-père paternelle</uuid>
+			            <uuid id="8">Tante maternelle</uuid>
+						<uuid id="9">Tante paternelle</uuid>
+						<uuid id="10">Oncle maternelle</uuid>
+						<uuid id="11">Oncle paternelle</uuid>
+						<uuid id="12">Cousine</uuid>
+						<uuid id="13">Cousin</uuid>
+			          </value>
+			  </Item>
+			  <Item type="shorttext" name="Comment">
+				  <label lang="fr">Commentaires éventuels</label>
+				  <label lang="xx">Comments in case of</label>
+			  </Item>
+	   </Item>
+  </Item>
+</MedForm>
+</FreeMedForms>
+
+

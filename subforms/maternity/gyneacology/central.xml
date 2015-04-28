@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FreeMedForms>
+<FreeMedForms>
+
+  <formdescription>
+  <!-- Non translatable values -->
+  <authors>Eric Maeker, MD</authors>
+  <version>0.9.0</version>
+  <fmfv>0.6.0</fmfv>
+  <cdate>2011-12-21</cdate>
+  <lmdate>2011-12-21</lmdate>
+  <icon></icon>
+  <weblink></weblink>
+  <bibliography pmid=""></bibliography>
+
+  <!-- Translatable values -->
+  <license>GPLv3</license>
+  <description lang="fr">Consultation gynécologique</description>
+  <description lang="xx">Consultation gynécologique</description>
+  <category lang="xx">Consultation</category>
+  <category lang="fr">Consultation</category>
+  <specialties lang="fr">Consultation</specialties>
+  <specialties lang="xx">Consultation</specialties>
+
+  </formdescription>
+
+<MedForm name="Consultation::gynécologique" type="form">
+  <label>Consultation gynécologique</label>
+  <creationdate>27-08-2009</creationdate>
+  <categorie>samples</categorie>
+  <icon>__theme__/stethoscope.png</icon>
+  <label lang="fr">Consultation gynécologique</label>
+  <categorie lang="fr">Echantillons</categorie>
+  <authors lang="fr">Dr Eric Maeker</authors>
+  <description lang="fr">Petite description ici</description>
+  <bibliography lang="fr">Bibliographie ici</bibliography>
+  <license lang="fr">Termes de la license</license>
+  <options>UseFormNameAsNameSpace</options> <!-- très important pour faciliter les namespaces dans les items -->
+  <column>1</column>
+  <option>compact</option>
+  <Item name="Consultation::Motif" type="combo">
+     <label>Motif de la consultation</label>
+     <value>
+       <possible id="0">suivi gynécologique systématique</possible>
+       <possible id="1">pathologie précise</possible>
+       <uuid id="0">suivi_gynécologique_systématique</uuid>
+       <uuid id="1">pathologie_précise</uuid>       
+     </value>
+  </Item>
+  <Item name="Pathologie" type="combo">
+     <label>Pathologie</label>
+     <value>
+       <possible id="0">Saignements anormaux</possible>
+       <possible id="1">Aménorrhées primaires</possible>
+       <possible id="2">Aménorrhées secondaires</possible>
+       <possible id="3">Leucorrhées</possible>
+       <possible id="4">Algies pelviennes</possible>
+       <possible id="5">Eruptions vulvaires</possible>
+       <possible id="6">Stérilité primaire</possible>
+       <uuid id="0">Saignements_anormaux</uuid>
+       <uuid id="1">Aménorrhées_primaires</uuid> 
+       <uuid id="2">Aménorrhées_secondaires</uuid>
+       <uuid id="3">Leucorrhées</uuid>
+       <uuid id="4">Algies_pelviennes</uuid>
+       <uuid id="5">Eruptions_vulvaires</uuid>
+       <uuid id="6">Stérilité_primaire</uuid>      
+     </value>
+  </Item>
+  <Item name="Details::saignements" type="combo">
+     <label>Détails de saignements</label>
+     <value>
+       <possible id="0">hypoménorrhées</possible>
+       <possible id="1">hyperménorrhées</possible>
+       <possible id="2">oligoménorrhées</possible>
+       <possible id="3">polyménorrhées</possible>
+       <possible id="4">ménorragies</possible>
+       <possible id="5">pollakiménorrhées</possible>
+       <possible id="6">spanioménorrhées</possible>
+       <uuid id="0">hypoménorrhées</uuid>
+       <uuid id="1">hyperménorrhées</uuid> 
+       <uuid id="2">oligoménorrhées</uuid>
+       <uuid id="3">polyménorrhées</uuid>
+       <uuid id="4">ménorragies</uuid>
+       <uuid id="5">pollakiménorrhées</uuid>
+       <uuid id="6">spanioménorrhées</uuid>      
+     </value>
+  </Item>
+  <Item type="shorttext" name="Examen::General">
+     <label>Examen général</label>
+	 <Item type="shortext" name="TA">
+		 <label lang="fr">Tension Artérielle :</label>
+		 <label lanf="xx">Blood pressure :</label>
+	 </Item>
+     <Item type="measurement" name="weight">
+      <label lang="xx">weight</label>
+      <label lang="fr">Poids</label>
+      <options>DontPrintEmptyValues;Weight</options>
+      <default>Kilogramme(s)</default>
+     </Item>
+     <Item type="measurement" name="Height">
+      <label lang="xx">Height</label>
+      <label lang="fr">Taille</label>
+      <options>DontPrintEmptyValues;Length</options>
+      <default>meter</default>
+     </Item>
+  </Item>
+  <Item name="Examen::senologique" type="shorttext">
+	  <label>Examen sénologique</label>
+  </Item>
+  <Item name="Examen::abdominal" type="shorttext">
+      <label>Examen abdominal</label>
+  </Item>
+  <Item name="Examen::perinal" type="shorttext">
+      <label>Examen Périnéal</label>
+  </Item>
+  <Item name="Pelvien" type="group">
+    <option>compact</option>
+	<label>EXAMEN PELVIEN :</label>
+    <Item name="Speculum" type="shorttext">
+      <label>Speculum</label>
+    </Item>
+    <Item name="Aspect::Vagin" type="shorttext">
+      <label>Aspect du vagin</label>
+    </Item>
+    <Item name="Presence:Leucorrhea" type="combo">
+     <label>Présence de leucorrhées</label>
+     <value>
+       <uuid id="0">oui</uuid>
+       <uuid id="1">non</uuid>
+      
+       <possible id="0" lang="xx">oui</possible>
+       <possible id="1" lang="xx">non</possible>
+       
+       <possible id="0" lang="fr">oui</possible>
+       <possible id="1" lang="fr">non</possible>
+       
+      </value>
+    </Item>
+    <Item name="Presence::Leucorrhea" type="group">
+		<options>collapsible</options>
+        <label>Cocher ici si Présence de leucorrhées</label>
+      <Item name="Characterisation"  type="shorttext">
+        <label>Caractérisation des leucorrhées</label>
+	  </Item>
+	</Item>
+    <Item name="TV" type="shorttext">
+      <label>TV</label>
+    </Item>    
+  </Item>
+  <Item name="COL" type="group">
+	<label>COL</label>
+    <option>compact</option>
+	<Item name="Position" type="combo">
+     <label>Position</label>
+     <value>
+       <uuid id="0">postérieur</uuid>
+       <uuid id="1">intermédiaire</uuid>
+       <uuid id="2">latéro_dévié</uuid>
+ 
+       <possible id="0" lang="xx">postérieur</possible>
+       <possible id="1" lang="xx">intermédiaire</possible>
+       <possible id="2" lang="xx">latéro-dévié</possible>             
+      </value>
+    </Item>
+    <Item name="Longeur" type="combo">
+     <label>Longueur</label>
+     <value>
+       <uuid id="0">long</uuid>
+       <uuid id="1">mi_long</uuid>
+       <uuid id="2">court</uuid>
+       <uuid id="3">en_voie_effacement</uuid>
+       <uuid id="4">effacé</uuid>
+       <possible id="0" lang="xx">long</possible>
+       <possible id="1" lang="xx">mi-long</possible>
+       <possible id="2" lang="xx">court</possible>
+       <possible id="3" lang="xx">en voie d'effacement</possible>
+       <possible id="4" lang="xx">effacé</possible>
+              
+      </value>
+    </Item>
+    <Item name="Consistance" type="combo">
+     <label>Consistance</label>
+     <value>
+       <uuid id="0">mou</uuid>
+       <uuid id="1">ferme</uuid>
+      
+       <possible id="0" lang="xx">mou</possible>
+       <possible id="1" lang="xx">ferme</possible>
+      </value>
+    </Item>
+    <Item name="Dilatation::orifice::interne"  type="shorttext">
+      <label>Dilatation de l'orifice interne</label>
+    </Item>  
+    <Item name="Dilatation::orifice::externe" type="shorttext">
+      <label>Dilatation de l'orifice externe</label>
+    </Item>
+  </Item>
+  <Item name="Corps::Uterin" type="group">
+     <label>CORPS UTERIN</label>
+	 <Item name="Taille" type="shorttext">
+      <label>Taille</label>
+     </Item>  
+     <Item name="Position" type="shorttext">
+	  <label>Position</label>
+     </Item>
+     <Item name="Form" type="shorttext">
+	  <label>Forme</label>
+     </Item>
+     <Item name="Consistance" type="shorttext">
+	     <label>Consistance</label>
+     </Item> 
+     <Item name="Mobility" type="shorttext">
+	  <label>Mobilité</label>
+     </Item> 
+     <Item name="Sensibility" type="shorttext">
+	  <label>Sensibilité</label>
+     </Item>
+  </Item> 
+  <Item name="Culs::sacs::vaginaux::lateraux">
+      <label>Culs de sac vaginaux latéraux</label>
+      <type>shorttext</type>
+  </Item> 
+</MedForm>
+</FreeMedForms>

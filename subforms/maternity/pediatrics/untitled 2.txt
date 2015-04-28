@@ -1,0 +1,30 @@
+		
+  	  <Item type="group" name="Maternity::Perso::Gyneco">
+          <label lang="xx">Gyneaco-Obstetrics</label>
+          <label lang="fr">Gynéco-Obstetrique</label>
+		
+		<Item type="group" name="Maternity::PMHx::Perso::Gyneco::Gynecobstetric">
+	        <label lang="xx">Gyneaco-PMHx</label>
+	        <label lang="fr">ATCD Gynécologique :</label>
+			<options>collapsible</options>
+			<Item type="shorttext" name="Maternity::PMHx::Menarche">
+			      <label lang="xx">Menarch</label>
+				  <label lang="fr">Ménarche</label>
+			</Item>
+			<Item type="shorttext" name="Maternity::PMHx::Cycle">
+			      <label lang="xx">Cycle</label>
+				  <label lang="fr">Cycle</label>
+			</Item>
+			<Item type="shorttext" name="Maternity::PMHx::Contraception">
+			      <label lang="xx">Contraception</label>
+				  <label lang="fr">Contraception</label>
+			</Item>
+			<Item type="shorttext" name="Maternity::PMHx::Pregnancy::delay">
+			      <label lang="xx">Post Pregnancy delay</label>
+				  <label lang="fr">Delai PF-Grossesse</label>
+			</Item>
+			<Item type="number" name="Maternity::PMHx::gesiste">
+			      <label lang="xx">Gesiste</label>
+				  <label lang="fr">Nombre de gestité</label>
+			</Item>
+	  </Item>

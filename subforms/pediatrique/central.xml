@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FreeMedForms>
+<FreeMedForms>
+
+  <formdescription>
+  <!-- Non translatable values -->
+  <authors>Eric Maeker, MD</authors>
+  <version>0.9.0</version>
+  <fmfv>0.6.0</fmfv>
+  <cdate>2011-12-21</cdate>
+  <lmdate>2011-12-21</lmdate>
+  <icon></icon>
+  <weblink></weblink>
+  <bibliography pmid=""></bibliography>
+
+  <!-- Translatable values -->
+  <license>GPLv3</license>
+  <description lang="fr">Antécédents pédiatrique</description>
+  <description lang="xx">Antécédents pédiatrique</description>
+  <category lang="xx">Antécédents</category>
+  <category lang="fr">Antécédents</category>
+  <specialties lang="fr">Antécédents</specialties>
+  <specialties lang="xx">Antécédents</specialties>
+
+  </formdescription>
+
+<MedForm>
+  <name>Antécédents_pédiatriqueFormSample</name>
+  <label>Antécédents_pédiatrique</label>
+  <type>form</type>
+  <creationdate>27-08-2009</creationdate>
+  <categorie>Antécédents</categorie>
+
+  <label lang="fr">Antécédents pédiatrique</label>
+  <categorie lang="fr">samples</categorie>
+  <authors lang="fr">Dr Eric Maeker</authors>
+  <description lang="fr">Petite description ici</description>
+  <bibliography lang="fr">Bibliographie ici</bibliography>
+  <license lang="fr">Termes de la license</license>
+
+  <column>1</column>
+  <option>compact</option>
+
+    <Item>
+     <name>sampleHelp_001</name>
+     <type>helptext</type>
+     <label>Filiation</label>
+    </Item>
+	<Item>
+    <name>sampleGroup_001</name>
+    <type>group</type>
+    <option>compact</option>	
+	<Item>
+      <name>sampleShort_001</name>
+      <label>Mère</label>
+      <type>shorttext</type>
+    </Item>
+	<Item>
+      <name>sampleShort_002</name>
+      <label>Père</label>
+      <type>shorttext</type>
+    </Item>
+	<Item>
+      <name>sampleShort_003</name>
+      <label>Lieu de naissance</label>
+      <type>shorttext</type>
+    </Item>	
+	</Item>
+	
+	<Item>
+     <name>sampleHelp_002</name>
+     <type>helptext</type>
+     <label> Antécédents familiaux</label>
+    </Item>
+	<Item>
+    <name>sampleGroup_002</name>
+    <type>group</type>
+    <option>compact</option>
+	
+	<Item>
+      <name>sampleShort_004</name>
+      <label>Ascendants</label>
+      <type>shorttext</type>
+    </Item>
+	<Item>
+      <name>sampleShort_005</name>
+      <label>Collatéraux</label>
+      <type>shorttext</type>
+    </Item>
+	
+	</Item>
+	
+	<Item>
+      <name>sampleShort_006</name>
+      <label>Antécédents personnels</label>
+      <type>shorttext</type>
+    </Item>
+	
+	
+   
+</MedForm>
+
+</FreeMedForms>

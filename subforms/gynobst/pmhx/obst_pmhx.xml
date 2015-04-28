@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FreeMedForms>
+<FreeMedForms>
+
+  <formdescription>
+    <!-- Non translatable values -->
+    <authors>Eric Maeker, MD</authors>
+    <version>0.7.0</version>
+    <fmfv>0.7.0</fmfv>
+    <cdate>2011-04-17</cdate>
+    <icon>gyncecological.png</icon>
+    <weblink>http://www.cngof.asso.fr/D_TELE/dossier_gyneco.pdf</weblink>
+    <bibliography>http://www.cngof.asso.fr/D_TELE/dossier_gyneco.pdf</bibliography>
+
+    <!-- Translatable values -->
+    <license>GPLv3</license>
+    <description lang="fr">Dossier médical gynéco-obstétrique (CNGOF)</description>
+    <description lang="en">Gyneco-obstetrical patient file</description>
+    <category lang="en">Gynecological and obstetrical</category>
+    <category lang="fr">Gynéco-Obstétrique</category>
+    <tooltip lang="fr">French tooltip</tooltip>
+    <tooltip lang="xx">All other languages tooltip</tooltip>
+    <htmldescription lang="fr"></htmldescription>
+    <htmldescription lang="xx"></htmldescription>
+    <specialties lang="fr"></specialties>
+    <specialties lang="xx"></specialties>
+
+  </formdescription>
+
+  <MedForm>
+    <name>episodeTester</name>
+    <label lang="xx">Identity</label>
+    <label lang="fr">Identité</label>
+    <type>form</type>
+    <options>unique</options>
+    <icon>__theme__/identity.png</icon>
+    <Item>
+      <type>identity</type>
+      <name>identity</name>
+      <label lang="en">Full Identity</label>
+      <label lang="fr">Identité</label>
+    </Item>
+  </MedForm>
+
+<!-- (parité, gestité, modalités accouchement, etc.) -->
+
+</FreeMedForms>

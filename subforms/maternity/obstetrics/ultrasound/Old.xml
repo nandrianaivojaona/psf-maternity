@@ -1,0 +1,1156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FreeMedForms>
+<FreeMedForms>
+
+  <formdescription>
+  <!-- Non translatable values -->
+  <authors>Eric Maeker, MD</authors>
+  <version>test</version>
+  <fmfv>0.6.0</fmfv>
+  <cdate>2011-12-21</cdate>
+  <lmdate>2011-12-21</lmdate>
+  <icon></icon>
+  <weblink></weblink>
+  <bibliography pmid=""></bibliography>
+
+  <!-- Translatable values -->
+  <!-- forms/subforms/obstetrics/Ultrasound - central.xml -->
+  <license>GPLv3</license>
+  <description lang="fr">Echographie</description>
+  <description lang="xx">Ultrasound</description>
+  <category lang="xx">Consultation</category>
+  <category lang="fr">Consultation</category>
+  <specialties lang="fr">Consultation</specialties>
+  <specialties lang="xx">Consultation</specialties>
+
+  </formdescription>
+  
+  <MedForm> <!-- Echo 1er trimestre -->
+    <name>echo_1trimestreFormSample</name>
+    <label>Echo 1er trimestre examples</label>
+    <type>form</type>
+    <creationdate>27-08-2009</creationdate>
+    <categorie>Consultation</categorie>
+
+    <label lang="fr">Echo 1er trimestre</label>
+    <categorie lang="fr">samples</categorie>
+    <authors lang="fr">Dr Eric Maeker</authors>
+    <description lang="fr">Petite description ici</description>
+    <bibliography lang="fr">Bibliographie ici</bibliography>
+    <license lang="fr">Termes de la license</license>
+
+    <column>1</column>
+    <option>compact</option>
+  
+    <Item>
+       <name>sampleHelp_1</name>
+       <type>helptext</type>
+       <label>Appareil : CHISON IVIS 60 Expert</label>
+    </Item>
+    <Item>
+         <name>date1</name>
+         <type>date</type>
+         <label>DDR</label>
+     </Item>
+     <Item>
+        <name>sampleShort_1</name>
+        <label>Renseignements cliniques :</label>
+        <type>shorttext</type>
+     </Item>
+     <Item>
+       <name>sampleHelp_2</name>
+       <type>helptext</type>
+       <label>Vitalité : </label>
+      </Item>
+     <Item>
+      <name>sampleGroup_1</name>
+      <type>group</type>
+      <option>compact</option>
+	
+  	  <Item>
+         <name>sampleCombo_1</name>
+         <type>combo</type>
+         <label>Grossesse : </label>
+        <value>
+         <possible id="0">intra-utérine</possible>
+         <possible id="1">extra-utérine</possible>
+         <uuid id="0">intra-utérine</uuid>
+         <uuid id="1">extra-utérine</uuid>       
+        </value>
+        </Item>
+  	  <Item>
+         <name>sampleCombo_2</name>
+         <type>combo</type>
+         <label>Mobilité fœtale :  </label>
+        <value>
+         <possible id="0">normale</possible>
+         <possible id="1">diminuée</possible>
+  	   <possible id="2">absente</possible>
+         <uuid id="0">normale</uuid>
+         <uuid id="1">diminuée</uuid>   
+  	   <uuid id="2">absente</uuid>	   
+        </value>
+        </Item>
+  	  <Item>
+        <name>sampleShort_2</name>
+        <label>Fréquence cardiaque : </label>
+        <type>shorttext</type>
+        </Item>
+	
+  	</Item>
+  	<Item>
+       <name>sampleHelp_3</name>
+       <type>helptext</type>
+       <label>Biométrie :</label>
+      </Item>
+     <Item>
+      <name>sampleGroup_2</name>
+      <type>group</type>
+      <option>compact</option>
+		  
+  	<Item>
+       <name>sampleHelp_4</name>
+       <type>helptext</type>
+       <label>Sac gestationnel (GS):</label>
+      </Item>
+  	<Item>
+        <name>sampleShort_3</name>
+        <label>mm</label>
+        <type>shorttext</type>
+      </Item>
+  	<Item>
+        <name>sampleShort_4</name>
+        <label>SA</label>
+        <type>shorttext</type>
+      </Item>
+  	<Item>
+        <name>sampleShort_5</name>
+        <label>Jour</label>
+        <type>shorttext</type>
+      </Item>
+	
+  	<Item>
+       <name>sampleHelp_5</name>
+       <type>helptext</type>
+       <label>Longueur crânio-caudale (LCC) : </label>
+      </Item>
+  	<Item>
+        <name>sampleShort_6</name>
+        <label>mm</label>
+        <type>shorttext</type>
+      </Item>
+  	<Item>
+        <name>sampleShort_7</name>
+        <label>SA</label>
+        <type>shorttext</type>
+      </Item>
+  	<Item>
+        <name>sampleShort_8</name>
+        <label>Jour</label>
+        <type>shorttext</type>
+      </Item>
+	
+  	<Item>
+       <name>sampleHelp_6</name>
+       <type>helptext</type>
+       <label>Diamètre bi-pariétal (BIP) :</label>
+      </Item>
+  	<Item>
+        <name>sampleShort_9</name>
+        <label>mm</label>
+        <type>shorttext</type>
+      </Item>
+  	<Item>
+        <name>sampleShort_10</name>
+        <label>SA</label>
+        <type>shorttext</type>
+      </Item>
+  	<Item>
+        <name>sampleShort_11</name>
+        <label>Jour</label>
+        <type>shorttext</type>
+      </Item>
+	
+  	<Item>
+       <name>sampleHelp_7</name>
+       <type>helptext</type>
+       <label>Périmètre céphalique (PC) : </label>
+      </Item>
+  	<Item>
+        <name>sampleShort_12</name>
+        <label>mm</label>
+        <type>shorttext</type>
+      </Item>
+  	<Item>
+        <name>sampleShort_13</name>
+        <label>SA</label>
+        <type>shorttext</type>
+      </Item>
+  	<Item>
+        <name>sampleShort_14</name>
+        <label>Jour</label>
+        <type>shorttext</type>
+      </Item>
+	
+  	<Item>
+       <name>sampleHelp_8</name>
+       <type>helptext</type>
+       <label>Circonférence abdominale (CA) :  </label>
+      </Item>
+  	<Item>
+        <name>sampleShort_15</name>
+        <label>mm</label>
+        <type>shorttext</type>
+      </Item>
+  	<Item>
+        <name>sampleShort_16</name>
+        <label>SA</label>
+        <type>shorttext</type>
+      </Item>
+  	<Item>
+        <name>sampleShort_17</name>
+        <label>Jour</label>
+        <type>shorttext</type>
+      </Item>
+	
+  	<Item>
+       <name>sampleHelp_9</name>
+       <type>helptext</type>
+       <label>Diamètre abdominal transverse (DAT) :  </label>
+      </Item>
+  	<Item>
+        <name>sampleShort_18</name>
+        <label>mm</label>
+        <type>shorttext</type>
+      </Item>
+  	<Item>
+        <name>sampleShort_19</name>
+        <label>SA</label>
+        <type>shorttext</type>
+      </Item>
+  	<Item>
+        <name>sampleShort_20</name>
+        <label>Jour</label>
+        <type>shorttext</type>
+      </Item>
+  	<Item>
+       <name>sampleHelp_10</name>
+       <type>helptext</type>
+       <label>Fémur (FL) :</label>
+      </Item>
+  	<Item>
+        <name>sampleShort_21</name>
+        <label>mm</label>
+        <type>shorttext</type>
+      </Item>
+  	<Item>
+        <name>sampleShort_22</name>
+        <label>SA</label>
+        <type>shorttext</type>
+      </Item>
+  	<Item>
+        <name>sampleShort_23</name>
+        <label>Jour</label>
+        <type>shorttext</type>
+      </Item>
+	
+  	<Item>
+       <name>sampleHelp_11</name>
+       <type>helptext</type>
+       <label>Clarté nucale (CN) : </label>
+      </Item>
+  	<Item>
+        <name>sampleShort_24</name>
+        <label>mm</label>
+        <type>shorttext</type>
+      </Item>	
+	
+  	</Item>
+  	<Item>
+        <name>sampleLong_1</name>
+        <label>commentaires événtuels</label>
+        <type>longtext</type>
+      </Item>
+	
+  	<Item>
+       <name>sampleHelp_12</name>
+       <type>helptext</type>
+       <label>Morphologie :  </label>
+      </Item>
+  	<Item>
+      <name>sampleGroup_3</name>
+      <type>group</type>
+      <option>compact</option>
+	
+  	<Item>
+       <name>sampleCombo_3</name>
+       <type>combo</type>
+       <label>Contour de la boîte crânienne : </label>
+       <value>
+         <possible id="0">normal</possible>
+         <possible id="1">anormal</possible>
+         <uuid id="0">normal</uuid>
+         <uuid id="1">anormal</uuid>       
+       </value>
+      </Item>
+  	<Item>
+        <name>sampleLong_2</name>
+        <label>commentaires événtuels</label>
+        <type>longtext</type>
+      </Item>
+  	<Item>
+       <name>sampleCombo_4</name>
+       <type>combo</type>
+       <label>Contenu céphalique :</label>
+       <value>
+         <possible id="0">conforme pour le terme</possible>
+         <possible id="1">non conforme pour le terme</possible>
+         <uuid id="0">conforme_terme</uuid>
+         <uuid id="1">non_conforme_terme</uuid>       
+       </value>
+      </Item>
+  	<Item>
+        <name>sampleLong_3</name>
+        <label>commentaires événtuels</label>
+        <type>longtext</type>
+      </Item>
+	
+  	</Item>
+	
+  </MedForm>
+  <MedForm> <!-- Echo 2nd trimestre -->
+    <name>echo_2trimestreFormSample</name>
+    <label>Echo 2eme trimestre examples</label>
+    <type>form</type>
+    <creationdate>27-08-2009</creationdate>
+    <categorie>Consultation</categorie>
+
+    <label lang="fr">Echo 2eme trimestre</label>
+    <categorie lang="fr">samples</categorie>
+    <authors lang="fr">Dr Eric Maeker</authors>
+    <description lang="fr">Petite description ici</description>
+    <bibliography lang="fr">Bibliographie ici</bibliography>
+    <license lang="fr">Termes de la license</license>
+
+    <column>1</column>
+    <option>compact</option>
+    <Item>
+         <name>date2</name>
+         <type>date</type>
+         <label>DDR</label>
+    </Item>
+    <Item>
+       <name>sampleHelp_13</name>
+       <type>helptext</type>
+       <label>Appareil : CHISON IVIS 60 Expert  </label>
+    </Item>
+    <Item>
+       <name>sampleHelp_14</name>
+       <type>helptext</type>
+       <label>Résultats : </label>
+    </Item>	
+	
+    <Item>
+      <name>sampleGroup_4</name>
+      <type>group</type>
+      <option>compact</option>
+  	   <Item>
+          <name>sampleCombo_5</name>
+          <type>combo</type>
+          <label>Fœtus :</label>
+          <value>
+          <possible id="0">unique</possible>
+          <possible id="1">multiple</possible>
+          <uuid id="0">unique</uuid>
+          <uuid id="1">multiple</uuid>       
+         </value>
+         </Item>
+    </Item>   
+     <Item>
+          <name>sampleLong_4</name>
+          <label>commentaires événtuels</label>
+          <type>longtext</type>
+     </Item>
+     <Item>
+          <name>sampleCombo_6</name>
+          <type>combo</type>
+          <label>Présentation : </label>
+          <value>
+          <possible id="0">céphalique</possible>
+          <possible id="1">siège</possible>
+  		<possible id="2">oblique</possible>
+  		<possible id="3">transverse</possible>
+  		<possible id="4">mobile</possible>
+          <uuid id="0">céphalique</uuid>
+          <uuid id="1">siège</uuid> 
+          <uuid id="2">oblique</uuid> 
+          <uuid id="3">transverse</uuid> 
+          <uuid id="4">mobile</uuid> 		
+          </value>
+     </Item>
+	
+  	<Item>
+          <name>sampleLong_5</name>
+          <label>commentaires événtuels</label>
+          <type>longtext</type>
+      </Item>
+  	<Item>
+          <name>sampleCombo_7</name>
+          <type>combo</type>
+          <label>Dos</label>
+          <value>
+           <possible id="0">gauche</possible>
+           <possible id="1">droite</possible>
+  		 <possible id="2">antérieur</possible>
+  		 <possible id="3">postérieur</possible>
+  		 <possible id="4">gauche antérieur</possible>
+  		 <possible id="5">gauche postérieur</possible>
+  		 <possible id="6">droite antérieur</possible>
+  		 <possible id="7">droite postérieur</possible>
+           <uuid id="0">gauche</uuid>
+           <uuid id="1">droite</uuid> 
+           <uuid id="2">antérieur</uuid> 
+           <uuid id="3">postérieur</uuid> 
+           <uuid id="4">gauche antérieur</uuid>
+           <uuid id="5">gauche postérieur</uuid> 	
+           <uuid id="6">droite antérieur</uuid> 	
+           <uuid id="7">droite postérieur</uuid> 	 		
+          </value>
+      </Item>
+  	<Item>
+          <name>sampleLong_6</name>
+          <label>commentaires événtuels</label>
+          <type>longtext</type>
+      </Item>
+	 	
+  	<Item>
+       <name>sampleHelp_15</name>
+       <type>helptext</type>
+       <label>Vitalité :  </label>
+      </Item>	
+  	<Item>
+      <name>sampleGroup_vitalite</name>
+      <type>group</type>
+      <option>compact</option>
+  	<Item>
+       <name>sampleCombo_vitalite</name>
+       <type>combo</type>
+       <label>Mouvements actifs :</label>
+       <value>
+         <possible id="0">normaux</possible>
+         <possible id="1">anormaux</possible>
+         <uuid id="0">normaux</uuid>
+         <uuid id="1">anormaux</uuid>       
+       </value>
+      </Item>
+  	<Item>
+        <name>sampleLong_vitalite</name>
+        <label>commentaires événtuels</label>
+        <type>longtext</type>
+      </Item>
+  	<Item>
+       <name>sampleCombo_actcar</name>
+       <type>combo</type>
+       <label>Activité cardiaque :</label>
+       <value>
+         <possible id="0">régulière</possible>
+         <possible id="1">irrégulière</possible>
+         <uuid id="0">régulière</uuid>
+         <uuid id="1">irrégulière</uuid>       
+       </value>
+      </Item>
+  	<Item>
+       <name>sampleHelp_actcar</name>
+       <type>helptext</type>
+       <label>à</label>
+      </Item>
+  	<Item>
+        <name>sampleShort_actcar</name>
+        <label>Bats/mn</label>
+        <type>shorttext</type>
+      </Item>
+  	<Item>
+        <name>sampleLong_actcar</name>
+        <label>commentaires événtuels</label>
+        <type>longtext</type>
+      </Item>
+  	<Item>
+       <name>sampleCombo_movresp</name>
+       <type>combo</type>
+       <label>Mouvements respiratoires :</label>
+       <value>
+         <possible id="0">normaux</possible>
+         <possible id="1">anormaux</possible>
+         <uuid id="0">normaux</uuid>
+         <uuid id="1">anormaux</uuid>       
+       </value>
+      </Item>
+  	<Item>
+        <name>sampleLong_movresp</name>
+        <label>commentaires événtuels</label>
+        <type>longtext</type>
+      </Item>
+	
+  	</Item>
+  	<Item>
+       <name>sampleHelp_bio</name>
+       <type>helptext</type>
+       <label>Biométrie : </label>
+      </Item>
+  	<Item>
+      <name>sampleGroup_bio</name>
+      <type>group</type>
+      <option>compact</option>
+  	<Item>
+       <name>sampleHelp_BIP</name>
+       <type>helptext</type>
+       <label>Diamètre bi-pariétal (BIP)</label>
+      </Item>
+  	<Item>
+        <name>sampleShort_BIPMM</name>
+        <label>mm</label>
+        <type>shorttext</type>
+      </Item>
+  	<Item>
+        <name>sampleShort_BIPSA</name>
+        <label>SA</label>
+        <type>shorttext</type>
+      </Item>
+  	<Item>
+        <name>sampleShort_BIPjour</name>
+        <label>jour</label>
+        <type>shorttext</type>
+      </Item>
+  	<Item>
+       <name>sampleHelp_PC</name>
+       <type>helptext</type>
+       <label>Périmètre céphalique (PC)</label>
+      </Item>
+  	<Item>
+        <name>sampleShort_PCMM</name>
+        <label>mm</label>
+        <type>shorttext</type>
+      </Item>
+  	<Item>
+        <name>sampleShort_PCSA</name>
+        <label>SA</label>
+        <type>shorttext</type>
+      </Item>
+  	<Item>
+        <name>sampleShort_PCjour</name>
+        <label>jour</label>
+        <type>shorttext</type>
+      </Item>
+  	<Item>
+       <name>sampleHelp_CA</name>
+       <type>helptext</type>
+       <label>Circonférence abdominale (CA)</label>
+      </Item>
+  	<Item>
+        <name>sampleShort_CAMM</name>
+        <label>mm</label>
+        <type>shorttext</type>
+      </Item>
+  	<Item>
+        <name>sampleShort_CASA</name>
+        <label>SA</label>
+        <type>shorttext</type>
+      </Item>
+  	<Item>
+        <name>sampleShort_CAjour</name>
+        <label>jour</label>
+        <type>shorttext</type>
+      </Item>
+  	<Item>
+       <name>sampleHelp_DAT</name>
+       <type>helptext</type>
+       <label>Diamètre abdominal transverse (DAT)</label>
+      </Item>
+  	<Item>
+        <name>sampleShort_DATMM</name>
+        <label>mm</label>
+        <type>shorttext</type>
+      </Item>
+  	<Item>
+        <name>sampleShort_DATSA</name>
+        <label>SA</label>
+        <type>shorttext</type>
+      </Item>
+  	<Item>
+        <name>sampleShort_DATjour</name>
+        <label>jour</label>
+        <type>shorttext</type>
+      </Item>
+  	<Item>
+       <name>sampleHelp_LF</name>
+       <type>helptext</type>
+       <label>Longueur fémorale (LF)</label>
+      </Item>
+  	<Item>
+        <name>sampleShort_LFMM</name>
+        <label>mm</label>
+        <type>shorttext</type>
+      </Item>
+  	<Item>
+        <name>sampleShort_LFSA</name>
+        <label>SA</label>
+        <type>shorttext</type>
+      </Item>
+  	<Item>
+        <name>sampleShort_LFjour</name>
+        <label>jour</label>
+        <type>shorttext</type>
+      </Item>
+  	<Item>
+       <name>sampleHelp_PFE</name>
+       <type>helptext</type>
+       <label>Poids fœtal estimatif (PFE)</label>
+      </Item>
+  	<Item>
+        <name>sampleShort_PFEMM</name>
+        <label>gr</label>
+        <type>shorttext</type>
+      </Item>
+  	<Item>
+        <name>sampleLong_bio</name>
+        <label>commentaires événtuels</label>
+        <type>longtext</type>
+      </Item>
+	
+  	</Item>
+  	<Item>
+       <name>sampleHelp_morpho</name>
+       <type>helptext</type>
+       <label>MORPHOLOGIE</label>
+      </Item>
+  	<Item>
+       <name>sampleHelp_polceph</name>
+       <type>helptext</type>
+       <label> Pôle céphalique :</label>
+      </Item>
+  	<Item>
+      <name>sampleGroup_polceph</name>
+      <type>group</type>
+      <option>compact</option>
+	
+  	<Item>
+       <name>sampleCombo_countcran</name>
+       <type>combo</type>
+       <label>Contour de la boîte crânienne : </label>
+       <value>
+         <possible id="0">normal</possible>
+         <possible id="1">anormal</possible>
+         <uuid id="0">normal</uuid>
+         <uuid id="1">anormal</uuid>       
+       </value>
+      </Item>
+  	<Item>
+        <name>sampleLong_countcran</name>
+        <label>commentaires événtuels</label>
+        <type>longtext</type>
+      </Item>
+  	<Item>
+       <name>sampleCombo_ventlat</name>
+       <type>combo</type>
+       <label>Ventricules latéraux : </label>
+       <value>
+         <possible id="0">normaux</possible>
+         <possible id="1">anormaux</possible>
+         <uuid id="0">normaux</uuid>
+         <uuid id="1">anormaux</uuid>       
+       </value>
+      </Item>
+  	<Item>
+        <name>sampleLong_ventlat</name>
+        <label>commentaires événtuels</label>
+        <type>longtext</type>
+      </Item>
+  	<Item>
+       <name>sampleCombo_stru</name>
+       <type>combo</type>
+       <label>Structure de la ligne médiane : </label>
+       <value>
+         <possible id="0">normalement visualisée</possible>
+         <possible id="1">anormalement visualisée</possible>
+         <uuid id="0">normalement_visualisée</uuid>
+         <uuid id="1">anormalement_visualisée</uuid>       
+       </value>
+      </Item>
+  	<Item>
+        <name>sampleLong_stru</name>
+        <label>commentaires événtuels</label>
+        <type>longtext</type>
+      </Item>
+  	<Item>
+       <name>sampleCombo_cerv</name>
+       <type>combo</type>
+       <label>Cervelet : </label>
+       <value>
+         <possible id="0">normal</possible>
+         <possible id="1">anormal</possible>
+         <uuid id="0">normal</uuid>
+         <uuid id="1">anormal</uuid>       
+       </value>
+      </Item>
+  	<Item>
+        <name>sampleLong_cerv</name>
+        <label>commentaires événtuels</label>
+        <type>longtext</type>
+      </Item>
+  	<Item>
+       <name>sampleCombo_fospost</name>
+       <type>combo</type>
+       <label>Fosse postérieure :</label>
+       <value>
+         <possible id="0">vue</possible>
+         <possible id="1">non vue</possible>
+         <uuid id="0">vue</uuid>
+         <uuid id="1">non_vue</uuid>       
+       </value>
+      </Item>
+  	<Item>
+        <name>sampleLong_fospost</name>
+        <label>commentaires événtuels</label>
+        <type>longtext</type>
+      </Item>
+  	<Item>
+       <name>sampleCombo_aspfac</name>
+       <type>combo</type>
+       <label>Aspect de la face :</label>
+       <value>
+         <possible id="0">normal</possible>
+         <possible id="1">anormal</possible>
+         <uuid id="0">normal</uuid>
+         <uuid id="1">anormal</uuid>       
+       </value>
+      </Item>
+  	<Item>
+        <name>sampleLong_aspfac</name>
+        <label>commentaires événtuels</label>
+        <type>longtext</type>
+      </Item>
+	
+  	</Item>
+	
+  </MedForm>
+  <MedForm> <!-- Echo 3eme Trimestre -->
+    <name>echo_3trimestreFormSample</name>
+    <label>Echo 3eme trimestre examples</label>
+    <type>form</type>
+    <creationdate>27-08-2009</creationdate>
+    <categorie>Consultation</categorie>
+
+    <label lang="fr">Echo 3eme trimestre</label>
+    <categorie lang="fr">samples</categorie>
+    <authors lang="fr">Dr Eric Maeker</authors>
+    <description lang="fr">Petite description ici</description>
+    <bibliography lang="fr">Bibliographie ici</bibliography>
+    <license lang="fr">Termes de la license</license>
+
+    <column>1</column>
+    <option>compact</option>
+     <Item>
+         <name>date2</name>
+         <type>date</type>
+         <label>DDR</label>
+      </Item>
+      <Item>
+       <name>sampleHelp_13</name>
+       <type>helptext</type>
+       <label>Appareil : CHISON IVIS 60 Expert  </label>
+      </Item>
+	
+  	<Item>
+       <name>sampleHelp_14</name>
+       <type>helptext</type>
+       <label>Résultats : </label>
+      </Item>	
+	
+  	<Item>
+      <name>sampleGroup_4</name>
+      <type>group</type>
+      <option>compact</option>
+  	   <Item>
+          <name>sampleCombo_5</name>
+          <type>combo</type>
+          <label>Fœtus :</label>
+          <value>
+          <possible id="0">unique</possible>
+          <possible id="1">multiple</possible>
+          <uuid id="0">unique</uuid>
+          <uuid id="1">multiple</uuid>       
+         </value>
+         </Item>
+	
+  	   <Item>
+          <name>sampleLong_4</name>
+          <label>commentaires événtuels</label>
+          <type>longtext</type>
+        </Item>
+  	  <Item>
+          <name>sampleCombo_6</name>
+          <type>combo</type>
+          <label>Présentation : </label>
+          <value>
+          <possible id="0">céphalique</possible>
+          <possible id="1">siège</possible>
+  		<possible id="2">oblique</possible>
+  		<possible id="3">transverse</possible>
+  		<possible id="4">mobile</possible>
+          <uuid id="0">céphalique</uuid>
+          <uuid id="1">siège</uuid> 
+          <uuid id="2">oblique</uuid> 
+          <uuid id="3">transverse</uuid> 
+          <uuid id="4">mobile</uuid> 		
+         </value>
+         </Item>
+	
+  	   <Item>
+          <name>sampleLong_5</name>
+          <label>commentaires événtuels</label>
+          <type>longtext</type>
+        </Item>
+  	  <Item>
+          <name>sampleCombo_7</name>
+          <type>combo</type>
+          <label>Dos</label>
+          <value>
+          <possible id="0">gauche</possible>
+          <possible id="1">droite</possible>
+  		<possible id="2">antérieur</possible>
+  		<possible id="3">postérieur</possible>
+  		<possible id="4">gauche antérieur</possible>
+  		<possible id="5">gauche postérieur</possible>
+  		<possible id="6">droite antérieur</possible>
+  		<possible id="7">droite postérieur</possible>
+          <uuid id="0">gauche</uuid>
+          <uuid id="1">droite</uuid> 
+          <uuid id="2">antérieur</uuid> 
+          <uuid id="3">postérieur</uuid> 
+          <uuid id="4">gauche antérieur</uuid>
+          <uuid id="5">gauche postérieur</uuid> 	
+          <uuid id="6">droite antérieur</uuid> 	
+          <uuid id="7">droite postérieur</uuid> 	 		
+         </value>
+         </Item>
+	
+  	   <Item>
+          <name>sampleLong_6</name>
+          <label>commentaires événtuels</label>
+          <type>longtext</type>
+         </Item>
+	 
+  	</Item>
+	
+  	<Item>
+       <name>sampleHelp_15</name>
+       <type>helptext</type>
+       <label>Vitalité :  </label>
+      </Item>	
+  	<Item>
+      <name>sampleGroup_vitalite</name>
+      <type>group</type>
+      <option>compact</option>
+  	<Item>
+       <name>sampleCombo_vitalite</name>
+       <type>combo</type>
+       <label>Mouvements actifs :</label>
+       <value>
+         <possible id="0">normaux</possible>
+         <possible id="1">anormaux</possible>
+         <uuid id="0">normaux</uuid>
+         <uuid id="1">anormaux</uuid>       
+       </value>
+      </Item>
+  	<Item>
+        <name>sampleLong_vitalite</name>
+        <label>commentaires événtuels</label>
+        <type>longtext</type>
+      </Item>
+  	<Item>
+       <name>sampleCombo_actcar</name>
+       <type>combo</type>
+       <label>Activité cardiaque :</label>
+       <value>
+         <possible id="0">régulière</possible>
+         <possible id="1">irrégulière</possible>
+         <uuid id="0">régulière</uuid>
+         <uuid id="1">irrégulière</uuid>       
+       </value>
+      </Item>
+  	<Item>
+       <name>sampleHelp_actcar</name>
+       <type>helptext</type>
+       <label>à</label>
+      </Item>
+  	<Item>
+        <name>sampleShort_actcar</name>
+        <label>Bats/mn</label>
+        <type>shorttext</type>
+      </Item>
+  	<Item>
+        <name>sampleLong_actcar</name>
+        <label>commentaires événtuels</label>
+        <type>longtext</type>
+      </Item>
+  	<Item>
+       <name>sampleCombo_movresp</name>
+       <type>combo</type>
+       <label>Mouvements respiratoires :</label>
+       <value>
+         <possible id="0">normaux</possible>
+         <possible id="1">anormaux</possible>
+         <uuid id="0">normaux</uuid>
+         <uuid id="1">anormaux</uuid>       
+       </value>
+      </Item>
+  	<Item>
+        <name>sampleLong_movresp</name>
+        <label>commentaires événtuels</label>
+        <type>longtext</type>
+      </Item>
+	
+  	</Item>
+  	<Item>
+       <name>sampleHelp_bio</name>
+       <type>helptext</type>
+       <label>Biométrie : </label>
+      </Item>
+  	<Item>
+      <name>sampleGroup_bio</name>
+      <type>group</type>
+      <option>compact</option>
+  	<Item>
+       <name>sampleHelp_BIP</name>
+       <type>helptext</type>
+       <label>Diamètre bi-pariétal (BIP)</label>
+      </Item>
+  	<Item>
+        <name>sampleShort_BIPMM</name>
+        <label>mm</label>
+        <type>shorttext</type>
+      </Item>
+  	<Item>
+        <name>sampleShort_BIPSA</name>
+        <label>SA</label>
+        <type>shorttext</type>
+      </Item>
+  	<Item>
+        <name>sampleShort_BIPjour</name>
+        <label>jour</label>
+        <type>shorttext</type>
+      </Item>
+  	<Item>
+       <name>sampleHelp_PC</name>
+       <type>helptext</type>
+       <label>Périmètre céphalique (PC)</label>
+      </Item>
+  	<Item>
+        <name>sampleShort_PCMM</name>
+        <label>mm</label>
+        <type>shorttext</type>
+      </Item>
+  	<Item>
+        <name>sampleShort_PCSA</name>
+        <label>SA</label>
+        <type>shorttext</type>
+      </Item>
+  	<Item>
+        <name>sampleShort_PCjour</name>
+        <label>jour</label>
+        <type>shorttext</type>
+      </Item>
+  	<Item>
+       <name>sampleHelp_CA</name>
+       <type>helptext</type>
+       <label>Circonférence abdominale (CA)</label>
+      </Item>
+  	<Item>
+        <name>sampleShort_CAMM</name>
+        <label>mm</label>
+        <type>shorttext</type>
+      </Item>
+  	<Item>
+        <name>sampleShort_CASA</name>
+        <label>SA</label>
+        <type>shorttext</type>
+      </Item>
+  	<Item>
+        <name>sampleShort_CAjour</name>
+        <label>jour</label>
+        <type>shorttext</type>
+      </Item>
+  	<Item>
+       <name>sampleHelp_DAT</name>
+       <type>helptext</type>
+       <label>Diamètre abdominal transverse (DAT)</label>
+      </Item>
+  	<Item>
+        <name>sampleShort_DATMM</name>
+        <label>mm</label>
+        <type>shorttext</type>
+      </Item>
+  	<Item>
+        <name>sampleShort_DATSA</name>
+        <label>SA</label>
+        <type>shorttext</type>
+      </Item>
+  	<Item>
+        <name>sampleShort_DATjour</name>
+        <label>jour</label>
+        <type>shorttext</type>
+      </Item>
+  	<Item>
+       <name>sampleHelp_LF</name>
+       <type>helptext</type>
+       <label>Longueur fémorale (LF)</label>
+      </Item>
+  	<Item>
+        <name>sampleShort_LFMM</name>
+        <label>mm</label>
+        <type>shorttext</type>
+      </Item>
+  	<Item>
+        <name>sampleShort_LFSA</name>
+        <label>SA</label>
+        <type>shorttext</type>
+      </Item>
+  	<Item>
+        <name>sampleShort_LFjour</name>
+        <label>jour</label>
+        <type>shorttext</type>
+      </Item>
+  	<Item>
+       <name>sampleHelp_PFE</name>
+       <type>helptext</type>
+       <label>Poids fœtal estimatif (PFE)</label>
+      </Item>
+  	<Item>
+        <name>sampleShort_PFEMM</name>
+        <label>gr</label>
+        <type>shorttext</type>
+      </Item>
+  	<Item>
+        <name>sampleLong_bio</name>
+        <label>commentaires événtuels</label>
+        <type>longtext</type>
+      </Item>
+	
+  	</Item>
+  	<Item>
+       <name>sampleHelp_morpho</name>
+       <type>helptext</type>
+       <label>MORPHOLOGIE</label>
+      </Item>
+  	<Item>
+       <name>sampleHelp_polceph</name>
+       <type>helptext</type>
+       <label> Pôle céphalique :</label>
+      </Item>
+  	<Item>
+      <name>sampleGroup_polceph</name>
+      <type>group</type>
+      <option>compact</option>
+	
+  	<Item>
+       <name>sampleCombo_countcran</name>
+       <type>combo</type>
+       <label>Contour de la boîte crânienne : </label>
+       <value>
+         <possible id="0">normal</possible>
+         <possible id="1">anormal</possible>
+         <uuid id="0">normal</uuid>
+         <uuid id="1">anormal</uuid>       
+       </value>
+      </Item>
+  	<Item>
+        <name>sampleLong_countcran</name>
+        <label>commentaires événtuels</label>
+        <type>longtext</type>
+      </Item>
+  	<Item>
+       <name>sampleCombo_ventlat</name>
+       <type>combo</type>
+       <label>Ventricules latéraux : </label>
+       <value>
+         <possible id="0">normaux</possible>
+         <possible id="1">anormaux</possible>
+         <uuid id="0">normaux</uuid>
+         <uuid id="1">anormaux</uuid>       
+       </value>
+      </Item>
+  	<Item>
+        <name>sampleLong_ventlat</name>
+        <label>commentaires événtuels</label>
+        <type>longtext</type>
+      </Item>
+  	<Item>
+       <name>sampleCombo_stru</name>
+       <type>combo</type>
+       <label>Structure de la ligne médiane : </label>
+       <value>
+         <possible id="0">normalement visualisée</possible>
+         <possible id="1">anormalement visualisée</possible>
+         <uuid id="0">normalement_visualisée</uuid>
+         <uuid id="1">anormalement_visualisée</uuid>       
+       </value>
+      </Item>
+  	<Item>
+        <name>sampleLong_stru</name>
+        <label>commentaires événtuels</label>
+        <type>longtext</type>
+      </Item>
+  	<Item>
+       <name>sampleCombo_cerv</name>
+       <type>combo</type>
+       <label>Cervelet : </label>
+       <value>
+         <possible id="0">normal</possible>
+         <possible id="1">anormal</possible>
+         <uuid id="0">normal</uuid>
+         <uuid id="1">anormal</uuid>       
+       </value>
+      </Item>
+  	<Item>
+        <name>sampleLong_cerv</name>
+        <label>commentaires événtuels</label>
+        <type>longtext</type>
+      </Item>
+  	<Item>
+       <name>sampleCombo_fospost</name>
+       <type>combo</type>
+       <label>Fosse postérieure :</label>
+       <value>
+         <possible id="0">vue</possible>
+         <possible id="1">non vue</possible>
+         <uuid id="0">vue</uuid>
+         <uuid id="1">non_vue</uuid>       
+       </value>
+      </Item>
+  	<Item>
+        <name>sampleLong_fospost</name>
+        <label>commentaires événtuels</label>
+        <type>longtext</type>
+      </Item>
+  	<Item>
+       <name>sampleCombo_aspfac</name>
+       <type>combo</type>
+       <label>Aspect de la face :</label>
+       <value>
+         <possible id="0">normal</possible>
+         <possible id="1">anormal</possible>
+         <uuid id="0">normal</uuid>
+         <uuid id="1">anormal</uuid>       
+       </value>
+      </Item>
+  	<Item>
+        <name>sampleLong_aspfac</name>
+        <label>commentaires événtuels</label>
+        <type>longtext</type>
+      </Item>
+	
+  	</Item>
+  
+  
+  </MedForm>
+  </FreeMedForms>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FreeMedForms>
+
+<FreeMedForms>
+	
+    <formdescription>
+    <!-- Non translatable values -->
+    <authors>Eric Maeker, MD -- Modified by PSF Team</authors>
+    <version>test</version>
+    <fmfv>0.6.0</fmfv>
+    <cdate>2011-12-21</cdate>
+    <lmdate>2011-12-21</lmdate>
+    <icon></icon>
+    <weblink></weblink>
+    <bibliography pmid=""></bibliography>
+    </formdescription>
+	
+  <PMHx>
+    <Category icon="__theme__/patienthistory.png" uuid="Maternity::PMHx::Pregnancy" sortId="0">
+        <label lang="xx">Pregnancy</label>
+        <label lang="fr">Grossesse Actuelle</label>
+        <extra>
+          <file>__subForms__/maternity/pmhx/pregnancy</file>
+        </extra>
+    </Category>
+    <Category icon="__theme__/patienthistory.png" uuid="Maternity::PMHx::RiskFactors" sortId="1">
+      <label lang="xx">Risk factors</label>
+      <label lang="fr">Facteurs de risque</label>
+      <extra>
+        <file>__subForms__/cardiology/riskfactors</file>
+      </extra>
+    </Category>
+    <Category icon="__theme__/patienthistory.png" uuid="Maternity::PMHx::Perso" sortId="2">
+      <label lang="xx">Personal</label>
+      <label lang="fr">Personnel</label>
+      <extra>       
+		  <file>__subForms__/maternity/pmhx/personal</file>
+      </extra>
+    </Category>
+    <Category icon="__theme__/patienthistory.png" uuid="Maternity::PMHx::Family"  sortId="3">
+      <label lang="xx">Family</label>
+      <label lang="fr">ATCD Familiaux</label>
+      <extra> <file>__subForms__/maternity/pmhx/family</file>
+      </extra>
+  </Category>
+    <Category icon="__theme__/patienthistory.png" uuid="Maternity::PMHx::Checkup"  sortId="4">
+      <label lang="xx">Checkup</label>
+      <label lang="fr">Bilan</label>
+      <extra>
+       <file>__subForms__/maternity/pmhx/checkup</file>
+      </extra>
+    </Category>
+  </PMHx>
+</FreeMedForms>

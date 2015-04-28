@@ -1,0 +1,758 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FreeMedForms>
+<FreeMedForms>
+
+  <formdescription>
+  <!-- Non translatable values -->
+  <authors>Eric Maeker, MD</authors>
+  <version>0.9.0</version>
+  <fmfv>0.6.0</fmfv>
+  <cdate>2011-12-21</cdate>
+  <lmdate>2011-12-21</lmdate>
+  <icon></icon>
+  <weblink></weblink>
+  <bibliography pmid=""></bibliography>
+
+  <!-- Translatable values -->
+  <license>GPLv3</license>
+  <description lang="fr">Consultation gynécologique</description>
+  <description lang="xx">Consultation gynécologique</description>
+  <category lang="xx">Consultation</category>
+  <category lang="fr">Consultation</category>
+  <specialties lang="fr">Consultation</specialties>
+  <specialties lang="xx">Consultation</specialties>
+
+  </formdescription>
+
+<MedForm>
+  <name>Consultation_gynécologiqueFormSample</name>
+  <label>Consultation gynécologique</label>
+  <type>form</type>
+  <creationdate>27-08-2009</creationdate>
+  <categorie>samples</categorie>
+
+  <label lang="fr">Consultation gynécologique</label>
+  <categorie lang="fr">samples</categorie>
+  <authors lang="fr">Dr Eric Maeker</authors>
+  <description lang="fr">Petite description ici</description>
+  <bibliography lang="fr">Bibliographie ici</bibliography>
+  <license lang="fr">Termes de la license</license>
+
+  <column>1</column>
+  <option>compact</option>
+ 
+  
+  <Item>
+     <name>sampleHelp_1</name>
+     <type>helptext</type>
+     <label>Motif de la consultation</label>
+    </Item>
+
+  <Item>
+     <name>sampleCombo_1</name>
+     <type>combo</type>
+     <label>Motif de la consultation</label>
+     <value>
+       <possible id="0">suivi gynécologique systématique</possible>
+       <possible id="1">pathologie précise</possible>
+       <uuid id="0">suivi_gynécologique_systématique</uuid>
+       <uuid id="1">pathologie_précise</uuid>       
+     </value>
+  </Item>
+
+  <Item>
+     <name>sampleHelp_2</name>
+     <type>helptext</type>
+     <label>Pathologie</label>
+    </Item>
+  <Item>
+     <name>sampleCombo_2</name>
+     <type>combo</type>
+     <label>Pathologie</label>
+     <value>
+       <possible id="0">Saignements anormaux</possible>
+       <possible id="1">Aménorrhées primaires</possible>
+       <possible id="2">Aménorrhées secondaires</possible>
+       <possible id="3">Leucorrhées</possible>
+       <possible id="4">Algies pelviennes</possible>
+       <possible id="5">Eruptions vulvaires</possible>
+       <possible id="6">Stérilité primaire</possible>
+       <uuid id="0">Saignements_anormaux</uuid>
+       <uuid id="1">Aménorrhées_primaires</uuid> 
+       <uuid id="2">Aménorrhées_secondaires</uuid>
+       <uuid id="3">Leucorrhées</uuid>
+       <uuid id="4">Algies_pelviennes</uuid>
+       <uuid id="5">Eruptions_vulvaires</uuid>
+       <uuid id="6">Stérilité_primaire</uuid>      
+     </value>
+  </Item>
+
+
+   <Item>
+     <name>sampleHelp_3</name>
+     <type>helptext</type>
+     <label>Détails de saignements</label>
+   </Item>
+
+  <Item>
+     <name>sampleCombo_3</name>
+     <type>combo</type>
+     <label>Détails de saignements</label>
+     <value>
+       <possible id="0">hypoménorrhées</possible>
+       <possible id="1">hyperménorrhées</possible>
+       <possible id="2">oligoménorrhées</possible>
+       <possible id="3">polyménorrhées</possible>
+       <possible id="4">ménorragies</possible>
+       <possible id="5">pollakiménorrhées</possible>
+       <possible id="6">spanioménorrhées</possible>
+       <uuid id="0">hypoménorrhées</uuid>
+       <uuid id="1">hyperménorrhées</uuid> 
+       <uuid id="2">oligoménorrhées</uuid>
+       <uuid id="3">polyménorrhées</uuid>
+       <uuid id="4">ménorragies</uuid>
+       <uuid id="5">pollakiménorrhées</uuid>
+       <uuid id="6">spanioménorrhées</uuid>      
+     </value>
+  </Item>
+
+  <Item>
+     <name>sampleHelp_4</name>
+     <type>helptext</type>
+     <label>Examen général</label>
+   </Item>
+  <Item type="measurement" name="weight">
+      <label lang="xx">weight</label>
+      <label lang="fr">Poids</label>
+      <options>DontPrintEmptyValues;Weight</options>
+      <default>Kilogramme(s)</default>
+    </Item>
+  <Item type="measurement" name="Height">
+      <label lang="xx">Height</label>
+      <label lang="fr">Taille</label>
+      <options>DontPrintEmptyValues;Length</options>
+      <default>meter</default>
+    </Item>
+
+  <Item>
+    <name>sampleGroup</name>
+    <type>group</type>
+    <option>compact</option>
+    <Item>
+      <name>sampleShort_1</name>
+      <label>Examen sénologique</label>
+      <type>shorttext</type>
+    </Item>
+    <Item>
+      <name>sampleShort_2</name>
+      <label>Examen abdominal</label>
+      <type>shorttext</type>
+    </Item>
+    <Item>
+      <name>sampleShort_3</name>
+      <label>Examen Périnéal</label>
+      <type>shorttext</type>
+    </Item>
+    
+  </Item>
+  
+  <Item>
+     <name>sampleHelp_4</name>
+     <type>helptext</type>
+     <label>EXAMEN PELVIEN</label>
+   </Item>
+
+  <Item>
+    <name>sampleGroup_2</name>
+    <type>group</type>
+    <option>compact</option>
+    <Item>
+      <name>sampleShort_4</name>
+      <label>Speculum</label>
+      <type>shorttext</type>
+    </Item>
+    <Item>
+      <name>sampleShort_5</name>
+      <label>Aspect du vagin</label>
+      <type>shorttext</type>
+    </Item>
+
+    <Item>
+      <name>sampleShort_6</name>
+      <label>Présence de leucorrhées</label>
+      <type>shorttext</type>
+    </Item>
+    <Item>
+     <name>sampleCombo_4</name>
+     <type>combo</type>
+     <label>Présence de leucorrhées</label>
+     <value>
+       <uuid id="0">oui</uuid>
+       <uuid id="1">non</uuid>
+      
+       <possible id="0" lang="xx">oui</possible>
+       <possible id="1" lang="xx">non</possible>
+       
+       <possible id="0" lang="fr">oui</possible>
+       <possible id="1" lang="fr">non</possible>
+       
+      </value>
+    </Item>
+    <Item>
+      <name>sampleShort_7</name>
+      <label>Caractérisation des leucorrhées</label>
+      <type>shorttext</type>
+    </Item>
+    <Item>
+      <name>sampleShort_8</name>
+      <label>TV</label>
+      <type>shorttext</type>
+    </Item>    
+  </Item>
+
+   <Item>
+     <name>sampleHelp_5</name>
+     <type>helptext</type>
+     <label>COL</label>
+   </Item>
+
+   <Item>
+    <name>sampleGroup_3</name>
+    <type>group</type>
+    <option>compact</option>
+
+    <Item>
+     <name>sampleCombo_5</name>
+     <type>combo</type>
+     <label>Position</label>
+     <value>
+       <uuid id="0">postérieur</uuid>
+       <uuid id="1">intermédiaire</uuid>
+       <uuid id="2">latéro_dévié</uuid>
+      
+       <possible id="0" lang="xx">postérieur</possible>
+       <possible id="1" lang="xx">intermédiaire</possible>
+       <possible id="2" lang="xx">latéro-dévié</possible>
+       
+              
+      </value>
+    </Item>
+    <Item>
+     <name>sampleCombo_6</name>
+     <type>combo</type>
+     <label>Longueur</label>
+     <value>
+       <uuid id="0">long</uuid>
+       <uuid id="1">mi_long</uuid>
+       <uuid id="2">court</uuid>
+       <uuid id="3">en_voie_effacement</uuid>
+       <uuid id="4">effacé</uuid>
+       <possible id="0" lang="xx">long</possible>
+       <possible id="1" lang="xx">mi-long</possible>
+       <possible id="2" lang="xx">court</possible>
+       <possible id="3" lang="xx">en voie d'effacement</possible>
+       <possible id="4" lang="xx">effacé</possible>
+              
+      </value>
+    </Item>
+    <Item>
+     <name>sampleCombo_7</name>
+     <type>combo</type>
+     <label>Consistance</label>
+     <value>
+       <uuid id="0">mou</uuid>
+       <uuid id="1">ferme</uuid>
+      
+       <possible id="0" lang="xx">mou</possible>
+       <possible id="1" lang="xx">ferme</possible>
+             
+       
+      </value>
+    </Item>
+
+    <Item>
+      <name>sampleShort_9</name>
+      <label>Dilatation de l'orifice interne</label>
+      <type>shorttext</type>
+    </Item>  
+    <Item>
+      <name>sampleShort_10</name>
+      <label>Dilatation de l'orifice externe</label>
+      <type>shorttext</type>
+    </Item>
+    
+   </Item>
+
+   <Item>
+     <name>sampleHelp_6</name>
+     <type>helptext</type>
+     <label>CORPS UTERIN</label>
+   </Item>
+
+  <Item>
+    <name>sampleGroup_4</name>
+    <type>group</type>
+    <option>compact</option>
+        
+    <Item>
+      <name>sampleShort_11</name>
+      <label>Taille</label>
+      <type>shorttext</type>
+    </Item>  
+    <Item>
+      <name>sampleShort_12</name>
+      <label>Position</label>
+      <type>shorttext</type>
+    </Item>
+    <Item>
+      <name>sampleShort_13</name>
+      <label>Forme</label>
+      <type>shorttext</type>
+    </Item>
+     <Item>
+      <name>sampleShort_14</name>
+      <label>Consistance</label>
+      <type>shorttext</type>
+    </Item> 
+    <Item>
+      <name>sampleShort_15</name>
+      <label>Mobilité</label>
+      <type>shorttext</type>
+    </Item> 
+    <Item>
+      <name>sampleShort_16</name>
+      <label>Sensibilité</label>
+      <type>shorttext</type>
+    </Item> 
+    <Item>
+      <name>sampleShort_17</name>
+      <label>Culs de sac vaginaux latéraux</label>
+      <type>shorttext</type>
+    </Item> 
+    
+   </Item>
+   
+
+</MedForm>
+<!-- Begining of anesthesy form
+  <MedForm>
+    <type>form</type>
+    <name>Consultation_pré_anesthésique</name>
+    <label>Consultation pré-anesthésique</label>
+    <options>compact</options>
+
+   
+    <Item>
+     <name>sampleHelp_7</name>
+     <type>helptext</type>
+     <label>Etat dentaire</label>
+    </Item>
+
+    <Item>
+      <name>sampleGroup_5</name>
+      <type>group</type>
+      <option>compact</option>
+  
+       <Item>
+       <name>sampleHelp_8</name>
+       <type>helptext</type>
+       <label>Prothèse dentaire</label>
+       </Item>
+
+       <Item>
+       <name>sampleCombo_8</name>
+       <type>combo</type>
+       <label>Prothèse dentaire</label>
+       <value>
+         <possible id="0">oui</possible>
+         <possible id="1">non</possible>
+         <uuid id="0">oui</uuid>
+         <uuid id="1">non</uuid>       
+       </value>
+       </Item>
+       <Item>
+       <name>sampleCombo_9</name>
+       <type>combo</type>
+       <label>Si oui</label>
+       <value>
+         <possible id="0">fixe</possible>
+         <possible id="1">amovible</possible>
+         <uuid id="0">fixe</uuid>
+         <uuid id="1">amovible</uuid>       
+       </value>
+       </Item>
+  
+    </Item>
+
+       <Item>
+       <name>sampleHelp_9</name>
+       <type>helptext</type>
+       <label>Examen cardiovasculaire</label>
+       </Item>
+
+       <Item>
+        <name>sampleGroup_6</name>
+        <type>group</type>
+        <option>compact</option>
+
+        <Item>
+         <name>sampleHelp_10</name>
+         <type>helptext</type>
+         <label>BDC</label>
+        </Item>
+        <Item>
+          <name>sampleCombo_10</name>
+          <type>combo</type>
+          <label>BDC</label>
+          <value>
+           <possible id="0">audible</possible>
+           <possible id="1">inaudible</possible>
+           <uuid id="0">audible</uuid>
+           <uuid id="1">inaudible</uuid>       
+          </value>
+        </Item>
+
+        <Item>
+         <name>sampleHelp_11</name>
+         <type>helptext</type>
+         <label>Bruits surajoutés</label>
+        </Item>
+        <Item>
+          <name>sampleCombo_11</name>
+          <type>combo</type>
+          <label>Bruits surajoutés</label>
+          <value>
+           <possible id="0">oui</possible>
+           <possible id="1">non</possible>
+           <uuid id="0">oui</uuid>
+           <uuid id="1">non</uuid>       
+          </value>
+        </Item>
+        <Item>
+         <name>sampleShort_18</name>
+         <label>Si oui</label>
+         <type>shorttext</type>
+        </Item>
+
+        <Item>
+         <name>sampleHelp_12</name>
+         <type>helptext</type>
+         <label>Etat des veines périphériques</label>
+        </Item>
+        <Item>
+          <name>sampleCombo_12</name>
+          <type>combo</type>
+          <label>Etat des veines périphériques</label>
+          <value>
+           <possible id="0">bon</possible>
+           <possible id="1">mauvais</possible>
+           <uuid id="0">bon</uuid>
+           <uuid id="1">mauvais</uuid>       
+          </value>
+        </Item>  
+
+        <Item>
+         <name>sampleHelp_13</name>
+         <type>helptext</type>
+         <label>Tension artérielle (TA)</label>
+        </Item>
+        <Item>
+         <name>sampleShort_19</name>
+         <label>PAS (mm Hg)</label>
+         <type>shorttext</type>
+        </Item>
+        <Item>
+         <name>sampleShort_20</name>
+         <label>PAD (mm Hg)</label>
+         <type>shorttext</type>
+        </Item>
+        <Item>
+         <name>sampleShort_21</name>
+         <label>FC (bats/min)</label>
+         <type>shorttext</type>
+        </Item>
+        <Item>
+         <name>sampleShort_22</name>
+         <label>Sa O2 (%)</label>
+         <type>shorttext</type>
+        </Item>
+  
+       </Item>
+
+        <Item>
+         <name>sampleHelp_14</name>
+         <type>helptext</type>
+         <label>Examen pulmonaire</label>
+        </Item>
+        <Item>
+          <name>sampleGroup_7</name>
+          <type>group</type>
+          <option>compact</option>
+
+          <Item>
+          <name>sampleHelp_14</name>
+          <type>helptext</type>
+          <label>Poumons libres</label>
+          </Item>
+          <Item>
+            <name>sampleCombo_13</name>
+            <type>combo</type>
+            <label>Poumons libres</label>
+            <value>
+            <possible id="0">oui</possible>
+            <possible id="1">non</possible>
+            <uuid id="0">oui</uuid>
+            <uuid id="1">non</uuid>       
+            </value>
+          </Item>
+          <Item>
+          <name>sampleHelp_15</name>
+          <type>helptext</type>
+          <label>MV</label>
+          </Item>
+          <Item>
+            <name>sampleCombo_14</name>
+            <type>combo</type>
+            <label>MV</label>
+            <value>
+            <possible id="0">avec</possible>
+            <possible id="1">sans</possible>
+            <uuid id="0">avec</uuid>
+            <uuid id="1">sans</uuid>       
+            </value>
+          </Item>
+          <Item>
+          <name>sampleHelp_16</name>
+          <type>helptext</type>
+          <label>Bruits anormaux</label>
+          </Item>
+          <Item>
+            <name>sampleCombo_15</name>
+            <type>combo</type>
+            <label>Bruits anormaux</label>
+            <value>
+            <possible id="0">avec</possible>
+            <possible id="1">sans</possible>
+            <uuid id="0">avec</uuid>
+            <uuid id="1">sans</uuid>       
+            </value>
+          </Item>
+          <Item>
+          <name>sampleShort_23</name>
+          <label>Si oui</label>
+          <type>shorttext</type>
+         </Item>
+    
+      </Item>
+
+          <Item>
+          <name>sampleHelp_17</name>
+          <type>helptext</type>
+          <label>Examen neurologique</label>
+          </Item>
+      <Item>
+        <name>sampleGroup_8</name>
+        <type>group</type>
+        <option>compact</option>
+  
+         <Item>
+          <name>sampleShort_24</name>
+          <label>convulsions</label>
+          <type>shorttext</type>
+         </Item>
+         <Item>
+          <name>sampleShort_25</name>
+          <label>hémiplégie</label>
+          <type>shorttext</type>
+         </Item>
+         <Item>
+          <name>sampleShort_26</name>
+          <label>autres</label>
+          <type>shorttext</type>
+         </Item>  
+      </Item>
+
+      <Item>
+      <name>sampleHelp_18</name>
+      <type>helptext</type>
+      <label>Examen biologique</label>
+      </Item>
+      <Item>
+        <name>sampleGroup_9</name>
+        <type>group</type>
+        <option>compact</option>
+        <Item>
+        <name>sampleHelp_18</name>
+        <type>helptext</type>
+        <label>Hémostase</label>
+        </Item>
+          <Item>
+          <name>sampleShort_27</name>
+          <label>TS (s)</label>
+          <type>shorttext</type>
+          </Item> 
+          <Item>
+          <name>sampleShort_28</name>
+          <label>TC (s)</label>
+          <type>shorttext</type>
+         </Item> 
+         <Item>
+          <name>sampleShort_29</name>
+          <label>TP (s)</label>
+          <type>shorttext</type>
+         </Item> 
+         <Item>
+          <name>sampleShort_30</name>
+          <label>TCA (s)</label>
+          <type>shorttext</type>
+         </Item> 
+         <Item>
+          <name>sampleShort_31</name>
+          <label>Hémogramme</label>
+          <type>shorttext</type>
+         </Item> 
+         <Item>
+          <name>sampleShort_32</name>
+          <label>Echocardiographie</label>
+          <type>shorttext</type>
+         </Item> 
+         <Item>
+          <name>sampleShort_33</name>
+          <label>ECG (électrocardiogramme )</label>
+          <type>shorttext</type>
+         </Item> 
+         <Item>
+          <name>sampleShort_34</name>
+          <label>Scannographie</label>
+          <type>shorttext</type>
+         </Item> 
+         <Item>
+          <name>sampleShort_35</name>
+          <label>Radiographie</label>
+          <type>shorttext</type>
+         </Item> 
+           
+      </Item>
+
+      <Item>
+        <name>sampleHelp_19</name>
+        <type>helptext</type>
+        <label>Scores</label>
+      </Item>
+      <Item>
+       <name>sampleGroup_10</name>
+       <type>group</type>
+       <option>compact</option>
+  
+      <Item>
+        <name>sampleHelp_20</name>
+        <type>helptext</type>
+        <label>ASA</label>
+      </Item>
+      <Item>
+       <name>sampleCombo_16</name>
+       <type>combo</type>
+       <label>ASA</label>
+       <value>
+         <possible id="0">I</possible>
+         <possible id="1">II</possible>
+         <possible id="2">III</possible>
+         <possible id="3">IV</possible>
+         <uuid id="0">I</uuid>
+         <uuid id="1">II</uuid> 
+         <uuid id="2">III</uuid>
+         <uuid id="3">IV</uuid>      
+       </value>
+      </Item>
+      <Item>
+        <name>sampleHelp_21</name>
+        <type>helptext</type>
+        <label>Risque opératoire (RIOR)</label>
+      </Item>
+      <Item>
+       <name>sampleCombo_17</name>
+       <type>combo</type>
+       <label>Risque opératoire (RIOR)</label>
+       <value>
+         <possible id="0">I</possible>
+         <possible id="1">II</possible>
+         <possible id="2">III</possible>
+         <possible id="3">IV</possible>
+         <possible id="4">V</possible>
+         <uuid id="0">I</uuid>
+         <uuid id="1">II</uuid> 
+         <uuid id="2">III</uuid>
+         <uuid id="3">IV</uuid>  
+         <uuid id="4">V</uuid>    
+       </value>
+      </Item>
+      <Item>
+        <name>sampleHelp_22</name>
+        <type>helptext</type>
+        <label>Dyspnée</label>
+      </Item>
+      <Item>
+       <name>sampleCombo_18</name>
+       <type>combo</type>
+       <label>Dyspnée</label>
+       <value>
+         <possible id="0">I</possible>
+         <possible id="1">II</possible>
+         <possible id="2">III</possible>
+         
+         <uuid id="0">I</uuid>
+         <uuid id="1">II</uuid> 
+         <uuid id="2">III</uuid>
+               
+       </value>
+      </Item>
+      <Item>
+        <name>sampleHelp_23</name>
+        <type>helptext</type>
+        <label>NYHA</label>
+      </Item>
+      <Item>
+       <name>sampleCombo_19</name>
+       <type>combo</type>
+       <label>NYHA</label>
+       <value>
+         <possible id="0">I</possible>
+         <possible id="1">II</possible>
+         <possible id="2">III</possible>
+         <possible id="3">IV</possible>
+         <uuid id="0">I</uuid>
+         <uuid id="1">II</uuid> 
+         <uuid id="2">III</uuid>
+         <uuid id="3">IV</uuid>      
+       </value>
+      </Item>
+      <Item>
+        <name>sampleHelp_24</name>
+        <type>helptext</type>
+        <label>Classification de Mallanpati</label>
+      </Item>
+      <Item>
+       <name>sampleCombo_20</name>
+       <type>combo</type>
+       <label>Classification de Mallanpati</label>
+       <value>
+         <possible id="0">I</possible>
+         <possible id="1">II</possible>
+         <possible id="2">III</possible>
+         <possible id="3">IV</possible>
+         <uuid id="0">I</uuid>
+         <uuid id="1">II</uuid> 
+         <uuid id="2">III</uuid>
+         <uuid id="3">IV</uuid>      
+       </value>
+      </Item>
+
+  
+    </Item>
+
+
+
+  </MedForm>
+end of form anesthesy -->
+
+</FreeMedForms>
